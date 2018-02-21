@@ -57,7 +57,7 @@
 
   <!-- IF NOT DOMAINSALE CHAIN -->
   <div ng-hide="showDomainSale()" class="alert alert-danger text-center">
-    <p> DomainSale is only available on the ETH and Ropsten (Testnet) chains. You are currently on the {{ajaxReq.type}} chain. <br /> Please use the node switcher in the upper right corner to select "ETH" or "Ropsten". </p>
+    <p> DomainSale is only available on the kUSD and Ropsten (Testnet) chains. You are currently on the {{ajaxReq.type}} chain. <br /> Please use the node switcher in the upper right corner to select "kUSD" or "Ropsten". </p>
   </div>
   <!-- / IF NOT DOMAINSALE CHAIN -->
 

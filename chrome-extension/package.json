@@ -1,0 +1,13 @@
+{
+    "name": "MyKowalaWallet",
+    "version": "3.11.3.3",
+    "description": "An NPM dist of MyKowalaWallet. For easier downloading & updating via CLI.",
+    "author": "MyKowalaWallet",
+    "license": "ISC",
+    "devDependencies": {
+        "open": "0.0.5"
+    },
+    "bin": {
+        "mew": "bin/startMEW.js"
+    }
+}

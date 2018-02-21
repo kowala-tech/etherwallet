@@ -1,11 +1,11 @@
 <div class="" ng-controller="helpersCtrl">
 
   <h1>
-    Convert Ethererum Units (e.g. Ether <-> Wei)
+    Convert Ethererum Units (e.g. kUSD <-> Wei)
   </h1>
 
   <h2 class="p">
-    Ether Wei Converter
+    kUSD Wei Converter
   </h2>
 
   <section class="mono">
@@ -161,7 +161,7 @@
   <section class="row">
     <div class="form-group col-sm-6">
       <label>
-        Amount you Bid (ETH)
+        Amount you Bid (kUSD)
       </label>
       <input class="form-control" type="text" ng-model="bidEth" ng-change="toBidWei()" />
     </div>
@@ -347,7 +347,7 @@
   <br /><br /><br />
 
 
-  <h1> Ether Unit Reference Guide
+  <h1> kUSD Unit Reference Guide
   </h1>
   <table class="table table-striped mono">
     <tr>

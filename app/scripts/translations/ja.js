@@ -33,7 +33,7 @@ X_HelpfulLinks                  :  '役立つリンクとよくある問答集',
 X_HelpfulLinks_1                :  'お財布の操作方法', /*How to Access your Wallet*/
 X_HelpfulLinks_2                :  '秘密鍵を紛失してしまいした', /*I lost my private key*/
 X_HelpfulLinks_3                :  '秘密鍵が別のアドレスを解錠しました', /*My private key opens a different address*/
-X_HelpfulLinks_4                :  'MyEtherWalletから、またはそれに向けて移管中', /*Migrating to/from MyEtherWallet*/
+X_HelpfulLinks_4                :  'MyKowalaWalletから、またはそれに向けて移管中', /*Migrating to/from MyKowalaWallet*/
 X_Network                       :  'ノード', // aka "node" or "chain" - used in the dropdown in header  /*Network*/
 X_Network_Custom                :  'カスタムネットワークやノードを追加', /*Add Custom Network / Node*/
 
@@ -68,12 +68,12 @@ DOMAIN_offer_15                 :  'ドメイン名の販売を中止して、�
 
 ENS_Bid_Title                   :  '入札する', /*Place a Bid*/
 ENS_Finalize                    :  '終了処理', /*Finalize*/
-ENS_Finalize_content            :  '終了処理を行うと、ドメイン名が落札者に移管されます。落札者には、第二位の入札価格との差額が返却されます。入札が一件だけの場合には、0.01ethとの差額が返却されます。落札者以外の入札も返却されます。', /*Finalizing this name assigns the ENS name to the winning bidder. The winner will be refunded the difference between their bid and the next-highest bid. If you are the only bidder, you will refunded all but 0.01 ETH. Any non-winners will also be refunded.*/
+ENS_Finalize_content            :  '終了処理を行うと、ドメイン名が落札者に移管されます。落札者には、第二位の入札価格との差額が返却されます。入札が一件だけの場合には、0.01ethとの差額が返却されます。落札者以外の入札も返却されます。', /*Finalizing this name assigns the ENS name to the winning bidder. The winner will be refunded the difference between their bid and the next-highest bid. If you are the only bidder, you will refunded all but 0.01 kUSD. Any non-winners will also be refunded.*/
 ENS_Finalize_content_1          :  'まもなく、オークションの最終処理と登録を行います。', /*You are about to finalize the auction & claim the name:*/
 ENS_Helper_1                    :  '処理プロセスの概要は？', /*What is the process like?*/
 ENS_Helper_2                    :  '１) 準備', /*1. Preparation*/
 ENS_Helper_3                    :  'どのアカウント(お財布)を使用するか決めてから、複数のバックアップがあることを確認、あるいは作成してください。', /*Decide which account you wish to own the name & ensure you have multiple backups of that account.*/
-ENS_Helper_4                    :  'そのドメイン名に対して可能な最大の支払ETHを決めてください(自分の<u>Bid Amount</u>)。その口座に、入札に必要な額と0.01ETHのガス消費分が残っていることを確かめてください。', /*Decide the maximum amount of ETH you are willing to pay for the name (your <u>Bid Amount</u>). Ensure that account has enough to cover your bid + 0.01 ETH for gas.*/
+ENS_Helper_4                    :  'そのドメイン名に対して可能な最大の支払kUSDを決めてください(自分の<u>Bid Amount</u>)。その口座に、入札に必要な額と0.01ETHのガス消費分が残っていることを確かめてください。', /*Decide the maximum amount of kUSD you are willing to pay for the name (your <u>Bid Amount</u>). Ensure that account has enough to cover your bid + 0.01 kUSD for gas.*/
 ENS_Helper_5                    :  '２) 競売の開始と入札', /*2. Start an Auction / Place a Bid*/
 ENS_Helper_6                    :  '入札期間は３日間（７２時間）です。', /*Bidding period lasts 3 days (72 hours).*/
 ENS_Helper_7                    :  '<u>Secret Phrase</u>で保護された<u>name</u>, <u>Actual Bid Amount</u>, <u>Bid Mask</u>を入力します。', /*You will enter the <u>name</u>, <u>Actual Bid Amount</u>, <u>Bid Mask</u>, which is protected by a <u>Secret Phrase</u>.*/
@@ -85,7 +85,7 @@ ENS_Helper_12                   :  'アカウントを解錠してから, <u>Bid
 ENS_Helper_13                   :  '同一価格での応札では、先に開示された応札が優先されます。', /*In the event that two parties bid exactly the same amount, the first bid revealed will win.*/
 ENS_Helper_14                   :  '４) 競売を終了する', /*4. Finalize the Auction*/
 ENS_Helper_15                   :  'いったん競売が（五日間、あるいは１２０時間後に）終了すると、その新しいドメイン名を確定するために、落札者は最終処理を行う必要があります。', /*Once the auction has ended (after 5 days / 120 hours), the winner needs to finalize the auction in order to claim their new name.*/
-ENS_Helper_16                   :  '落札者には、その入札額と二番入札との差額が返金されます。', /*The winner will be refunded the difference between their bid and the next-highest bid. If you are the only bidder, you will refunded all but 0.01 ETH.*/
+ENS_Helper_16                   :  '落札者には、その入札額と二番入札との差額が返金されます。', /*The winner will be refunded the difference between their bid and the next-highest bid. If you are the only bidder, you will refunded all but 0.01 kUSD.*/
 ENS_Helper_17                   :  '詳細情報', /*More Information*/
 ENS_Helper_18                   :  '登録のための競売は、封印入札方式で、詳細は', /*The auction for this registrar is a blind auction, and is described in*/
 ENS_Helper_19                   :  '基本的には応札中に何も開示されません。', /*Basically, no one can see *anything* during the auction.*/
@@ -104,46 +104,46 @@ EOS_02                          :  '**ＥＯＳの鍵を登録／転写する**'
 EOS_03                          :  '`register`を選択する', /*Select `register`*/
 EOS_04                          :  '**ＥＯＳの公開鍵**を入力する　<---　ＥＯＳの公開鍵に注意！', /*Enter your **EOS Public Key** <--- CAREFUL! EOS PUBLIC KEY!*/
 EOS_05                          :  '送出ページでＥＯＳの契約に入金', /*Fund EOS Contract on Send Page*/
-EOS_06                          :  'Ether/トークンの送出ページに移動', /*Go to Send Ether & Tokens Page*/
+EOS_06                          :  'kUSD/トークンの送出ページに移動', /*Go to Send kUSD & Tokens Page*/
 EOS_07                          :  '解錠中のお財布と同じものをここで解錠', /*Unlock same wallet you are unlocking here.*/
 EOS_08                          :  '支援する数量を`0xd0a6E6C54DbC68Db5db3A091B171A77407Ff7ccf`に送出する', /*Send Amount you want to Contribute to `0xd0a6E6C54DbC68Db5db3A091B171A77407Ff7ccf`*/
 EOS_09                          :  'ＥＯＳトークンを請求', /*Claim EOS Tokens*/
 EOS_10                          :  '`claimAll`を選択。', /*Select `claimAll`.*/
 
 /* Onboarding */
-ONBOARD_welcome_title           :  'いらっしゃいませ！ MyEtherWallet.com へようこそ！', /*Welcome to MyEtherWallet.com*/
+ONBOARD_welcome_title           :  'いらっしゃいませ！ testnet-wallet.kowala.io へようこそ！', /*Welcome to testnet-wallet.kowala.io*/
 ONBOARD_welcome_content__1      :  '安全のためにご理解ください🙏 。', /*Please take some time to understand this for your own safety. 🙏*/
 ONBOARD_welcome_content__2      :  'これらの警告をよくご覧いただきませんと、**資産が盗まれる**ことになります。', /*Your funds will be stolen if you do not heed these warnings.*/
 ONBOARD_welcome_content__3      :  'わずらわしい説明と重々に承知いたしております。申し訳ございません。', /*We know this click-through stuff is annoying. We are sorry.*/
 ONBOARD_welcome_content__4      :  'ＭＥＷって何？', /*What is MEW*/
-ONBOARD_welcome_content__5      :  'MyEtherWalletはソースコード公開で、クライアント側にある無料で共用の利用者窓口です。', /*MyEtherWallet is a free, open-source, client-side interface.*/
+ONBOARD_welcome_content__5      :  'MyKowalaWalletはソースコード公開で、クライアント側にある無料で共用の利用者窓口です。', /*MyKowalaWallet is a free, open-source, client-side interface.*/
 ONBOARD_welcome_content__6      :  'ブロックチェーン上の暗号鍵と暗号資産の管理を直接行うことができます。', /*We allow you to interact directly with the blockchain while remaining in full control of your keys &amp; your funds.*/
 ONBOARD_welcome_content__7      :  'セキュリティの全責任は**自分**に、そして**自分だけ**にあります。', /***You** and **only you** are responsible for your security.*/
 ONBOARD_welcome_content__8      :  'ＭＥＷを騙る詐欺サイトに行って、暗号鍵や、暗号資産を盗られてしまったら、誰も取り返したり凍結することはできません。', /*We cannot recover your funds or freeze your account if you visit a phishing site or lose your private key.*/
-ONBOARD_bank_title              :  'MyEtherWalletは金融機関にあらず　', /*MyEtherWallet is not a Bank*/
+ONBOARD_bank_title              :  'MyKowalaWalletは金融機関にあらず　', /*MyKowalaWallet is not a Bank*/
 ONBOARD_bank_content__1         :  '取引所などの金融機関に口座を開設すると、その金融機関がシステムの中にあなたの口座を作成します。', /*When you open an account with a bank or exchange, they create an account for you in their system.*/
 ONBOARD_bank_content__2         :  'その金融機関は口座のパスワード、残高、取引記録や最終的にあなたの財産を含む個人情報を記録管理します。', /*The bank keeps track of your personal information, account passwords, balances, transactions and ultimately your money.*/
 ONBOARD_bank_content__3         :  'また、カードが盗難に会った際の払い戻しなど、口座の維持管理に必要な手数料を徴収します。', /*The bank charge fees to manage your account and provide services, like refunding transactions when your card gets stolen.*/
 ONBOARD_bank_content__4         :  'そのため、送金したり、オンラインで口座の確認をしたり、パスワードや盗難に会ったカードの再発行ができます。', /*The bank allows you to write a check or charge your debit card to send money, go online to check your balance, reset your password, and get a new debit card if you lose it.*/
 ONBOARD_bank_content__5         :  '金融機関や取引所にある口座では、送金額の上限、送金相手の設定、送金前にどれくらいの時間をかけて相手の疑わしさを調べるか、などを独自に決めています。全て手数料が元になっています。', /*You have an account *with the bank or exchange* and they decide how much money you can send, where you can send it, and how long to hold on a suspicious deposit. All for a fee.*/
 ONBOARD_welcome_title__alt      :  '前置き', /*Introduction*/
-ONBOARD_interface_title         :  'MyEtherWalletは、共用の利用者窓口　', /*MyEtherWallet is an Interface*/
-ONBOARD_interface_content__1    :  'MyEtherWalletを使って口座を作る時、一対の暗号のための二つの長い数字、すなわち秘密鍵と公開鍵（アドレス）とが作成されます。', /*When you create an account on MyEtherWallet you are generating a cryptographic set of numbers: your private key and your public key (address).*/
+ONBOARD_interface_title         :  'MyKowalaWalletは、共用の利用者窓口　', /*MyKowalaWallet is an Interface*/
+ONBOARD_interface_content__1    :  'MyKowalaWalletを使って口座を作る時、一対の暗号のための二つの長い数字、すなわち秘密鍵と公開鍵（アドレス）とが作成されます。', /*When you create an account on MyKowalaWallet you are generating a cryptographic set of numbers: your private key and your public key (address).*/
 ONBOARD_interface_content__2    :  'これらの暗号鍵の操作は全て自分のコンピューターのブラウザの中で行われます。', /*The handling of your keys happens entirely on your computer, inside your browser.*/
 ONBOARD_interface_content__3    :  '私たちは、秘密鍵、パスワードや口座情報の送信や保管を一切いたしません。', /*We never transmit, receive or store your private key, password, or other account information.*/
 ONBOARD_interface_content__4    :  '私たちは取引手数料を一切いただきません。', /*We do not charge a transaction fee.*/
 ONBOARD_interface_content__5    :  'あなたは、私たちの**利用者窓口**でブロックチェーンを**直接**操作しています。', /*You are simply using our **interface** to interact **directly with the blockchain**.*/
-ONBOARD_interface_content__6    :  '公開鍵（アドレス）を相手に教えると、ＥＴＨやトークンを受け渡し出来る様になります。👍', /*If you send your *public key (address)* to someone, they can send you ETH or tokens. 👍*/
+ONBOARD_interface_content__6    :  '公開鍵（アドレス）を相手に教えると、ＥＴＨやトークンを受け渡し出来る様になります。👍', /*If you send your *public key (address)* to someone, they can send you kUSD or tokens. 👍*/
 ONBOARD_interface_content__7    :  '秘密鍵が誰かの手に渡ると、受け取った相手がその口座を自分のものにします。👎', /*If you send your *private key* to someone, they now have full control of your account. 👎*/
-ONBOARD_bank_title__alt         :  'MyEtherWalletは金融機関にあらず　', /*MEW isn\'t a Bank*/
+ONBOARD_bank_title__alt         :  'MyKowalaWalletは金融機関にあらず　', /*MEW isn\'t a Bank*/
 ONBOARD_blockchain_title__alt   :  '一体ブロックチェーンって何？　', /*WTF is a Blockchain?*/
 ONBOARD_blockchain_skip         :  'もう知ってるんだけど...', /*I already know what a blockchain is...*/
 ONBOARD_blockchain_title        :  'ちょっと待って、一体ブロックチェーンって何？ ', /*Wait, WTF is a Blockchain?*/
 ONBOARD_blockchain_content__1   :  'ブロックチェーンは、世界共通の巨大な分散型のスプレッドシートのようなものです。', /*The blockchain is like a huge, global, decentralized spreadsheet.*/
 ONBOARD_blockchain_content__2   :  '誰が誰にコインをいくら送ったとか、どの口座にいくら、などの履歴を全て持っています。', /*It keeps track of who sent how many coins to whom, and what the balance of every account is.*/
 ONBOARD_blockchain_content__3   :  '何千もいる特殊なコンピューターを持った人（発掘者）によって記録と管理が行われます。', /*It is stored and maintained by thousands of people (miners) across the globe who have special computers.*/
-ONBOARD_blockchain_content__4   :  'ブロックチェーンのなかのブロックはMyEtherWallet, MetaMask, Exodus, Mist, Geth, Parityなど至る所で行われている個々の処理や取引で作られています。', /*The blocks in the blockchain are made up of all the individual transactions sent from MyEtherWallet, MetaMask, Exodus, Mist, Geth, Parity, and everywhere else.*/
-ONBOARD_blockchain_content__5   :  'MyEtherWalletや[etherscan.io](https://etherscan.io)で残高や処理を見た時、見えるのは私たちのシステムの中ではなく、ブロックチェーンにあるデータです。', /*When you see your balance on MyEtherWallet.com or view your transactions on [etherscan.io](https://etherscan.io), you are seeing data on the blockchain, not in our personal systems.*/
+ONBOARD_blockchain_content__4   :  'ブロックチェーンのなかのブロックはMyKowalaWallet, MetaMask, Exodus, Mist, Geth, Parityなど至る所で行われている個々の処理や取引で作られています。', /*The blocks in the blockchain are made up of all the individual transactions sent from MyKowalaWallet, MetaMask, Exodus, Mist, Geth, Parity, and everywhere else.*/
+ONBOARD_blockchain_content__5   :  'MyKowalaWalletや[etherscan.io](https://etherscan.io)で残高や処理を見た時、見えるのは私たちのシステムの中ではなく、ブロックチェーンにあるデータです。', /*When you see your balance on testnet-wallet.kowala.io or view your transactions on [etherscan.io](https://etherscan.io), you are seeing data on the blockchain, not in our personal systems.*/
 ONBOARD_blockchain_content__6   :  'もう一度： **私たちは金融機関ではありません。**', /*Again: **we are not a bank**.*/
 ONBOARD_interface_title__alt    :  'ＭＥＷは共用の利用者窓口　', /*MEW is an Interface*/
 ONBOARD_why_title__alt          :  'でも...なんでそれがそんなに大事？', /*But...why does this matter?*/
@@ -160,7 +160,7 @@ ONBOARD_why_content__9          :  'もし秘密鍵やパスワードを忘れ�
 ONBOARD_why_content__10         :  'もし、あなたが秘密鍵を詐欺サイトで入力すると、**全ての資産**が盗まれてしまいます。', /*If you enter your private key on a phishing website, you will have **all your funds taken**.*/
 ONBOARD_blockchain_title__alt   :  '一体ブロックチェーンって何？ ', /*WTF is a Blockchain?*/
 ONBOARD_point_title__alt        :  'それじゃＭＥＷは何ができるの？', /*What\'s the Point of MEW then?*/
-ONBOARD_whymew_title            :  'MyEtherWalletにできないなら、どうすればいいの？', /*If MyEtherWallet can\'t do those things, what\'s the point?*/
+ONBOARD_whymew_title            :  'MyKowalaWalletにできないなら、どうすればいいの？', /*If MyKowalaWallet can\'t do those things, what\'s the point?*/
 ONBOARD_whymew_content__1       :  'それがブロックチェーンによる分散化の**きも**だからです。', /*Because that is the point of decentralization and the blockchain.*/
 ONBOARD_whymew_content__2       :  '自分の資産やお金を動かすときに、金融機関、政府や他の誰かを頼る必要が全くありません。', /*You don\'t have to rely on your bank, government, or anyone else when you want to move your funds.*/
 ONBOARD_whymew_content__3       :  '自分の資産を守るために、取引所や金融機関のセキュリティを頼る必要もありません。', /*You don\'t have to rely on the security of an exchange or bank to keep your funds safe.*/
@@ -170,9 +170,9 @@ ONBOARD_whymew_content__6       :  'もし、少し不安だけれどもＭＥ�
 ONBOARD_why_title__alt          :  'でも...どうして？', /*But...why?*/
 ONBOARD_secure_title            :  '自分自身とその資産の守り方　', /*How To Protect Yourself & Your Funds*/
 ONBOARD_secure_1_title          :  'オンライン詐欺から自分自身を守る方法　', /*How To Protect Yourself from Phishers*/
-ONBOARD_secure_1_content__1     :  'オンライン詐欺師は、MyEtherWallet、EtherDelta、Paypalやあなたの金融機関のリンクが含まれた個人メッセージを送りつけてきますが、これは偽のサイトです。あなたの情報を盗み、そして資産を盗みます。', /*Phishers send you a message with a link to a website that looks just like MyEtherWallet, EtherDelta, Paypal, or your bank, but is not the real website. They steal your information and then steal your money.*/
-ONBOARD_secure_1_content__2     :  '[EAL](https://chrome.google.com/webstore/detail/etheraddresslookup/pdknmigbbbhmllnmgdfalmedcmcefdfn)または[MetaMask](https://myetherwallet.github.io/knowledge-base/migration/moving-from-private-key-to-metamask.html) or [Cryptonite by Metacert](https://chrome.google.com/webstore/detail/cryptonite-by-metacert/keghdcpemohlojlglbiegihkljkgnige). のクローム拡張を使って、これらの悪意のサイトを遮断してください。', /*Install [EAL](https://chrome.google.com/webstore/detail/etheraddresslookup/pdknmigbbbhmllnmgdfalmedcmcefdfn) or [MetaMask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn) or  or the [MyEtherWallet Chrome Extension](https://chrome.google.com/webstore/detail/myetherwallet-cx/nlbmnnijcnlegkjjpcfjclmcfggfefdm) to block malicious websites.*/
-ONBOARD_secure_1_content__3     :  'いつも、必ず、ＵＲＬ：「https://www.myetherwallet.com」を確認してください。', /*Always check the URL: `https://www.myetherwallet.com`.*/
+ONBOARD_secure_1_content__1     :  'オンライン詐欺師は、MyKowalaWallet、EtherDelta、Paypalやあなたの金融機関のリンクが含まれた個人メッセージを送りつけてきますが、これは偽のサイトです。あなたの情報を盗み、そして資産を盗みます。', /*Phishers send you a message with a link to a website that looks just like MyKowalaWallet, EtherDelta, Paypal, or your bank, but is not the real website. They steal your information and then steal your money.*/
+ONBOARD_secure_1_content__2     :  '[EAL](https://chrome.google.com/webstore/detail/etheraddresslookup/pdknmigbbbhmllnmgdfalmedcmcefdfn)または[MetaMask](https://myetherwallet.github.io/knowledge-base/migration/moving-from-private-key-to-metamask.html) or [Cryptonite by Metacert](https://chrome.google.com/webstore/detail/cryptonite-by-metacert/keghdcpemohlojlglbiegihkljkgnige). のクローム拡張を使って、これらの悪意のサイトを遮断してください。', /*Install [EAL](https://chrome.google.com/webstore/detail/etheraddresslookup/pdknmigbbbhmllnmgdfalmedcmcefdfn) or [MetaMask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn) or  or the [MyKowalaWallet Chrome Extension](https://chrome.google.com/webstore/detail/myetherwallet-cx/nlbmnnijcnlegkjjpcfjclmcfggfefdm) to block malicious websites.*/
+ONBOARD_secure_1_content__3     :  'いつも、必ず、ＵＲＬ：「https://testnet-wallet.kowala.io」を確認してください。', /*Always check the URL: `https://testnet-wallet.kowala.io`.*/
 ONBOARD_secure_1_content__4     :  'ＵＲＬバーに、 `MYETHERWALLET LLC`と緑色で表示されていることを必ず確認してください。', /**/
 ONBOARD_secure_1_content__5     :  'ｅメール、Slack、Reddit、Twitterやその他から送られてくるメッセージやリンクを信用しないでください。', /*Do not trust messages or links sent to you randomly via email, Slack, Reddit, Twitter, etc.*/
 ONBOARD_secure_1_content__6     :  '情報を入力する前に、常に直接サイトを参照してから閲覧してください。ｅメールやメッセージのリンクを押してから情報を入力しないでください。', /*Always navigate directly to a site before you enter information. Do not enter information after clicking a link from a message or email.*/
@@ -208,8 +208,8 @@ ONBOARD_final_content__9        :  'もう勘弁、お願い、早く使わせ�
 ONBOARD_resume                  :  '前回スライドを最後までお読みになっていないようです。プロのアドバイス：スライドを全部読みましょう😉',/*It looks like you didn\'t finish reading through these slides last time. ProTip: Finish reading through the slides 😉*/
 
 /* Old */
-ADD_DigitalBitbox_0a        : 'セキュアコネクション（SSL)で再度MyEtherWalletを開いてください。 ',
-ADD_DigitalBitbox_0b        : 'MyEtherWalletを再度「Chrome」(https://www.google.com/chrome/browser/desktop/) あるいは [Opera](https://www.opera.com/)で開いてください。 ',
+ADD_DigitalBitbox_0a        : 'セキュアコネクション（SSL)で再度MyKowalaWalletを開いてください。 ',
+ADD_DigitalBitbox_0b        : 'MyKowalaWalletを再度「Chrome」(https://www.google.com/chrome/browser/desktop/) あるいは [Opera](https://www.opera.com/)で開いてください。 ',
 ADD_DigitalBitbox_scan      : 'DigitalBitboxに接続する ',
 ADD_Label_1                 : 'ご希望の操作方法をお選びください ',
 ADD_Label_2                 : 'ニックネームの作成： ',
@@ -220,8 +220,8 @@ ADD_Label_6                 : 'お財布をアンロック： ',
 ADD_Label_6_short           : 'アンロック ',
 ADD_Label_7                 : 'アカウント追加 ',
 ADD_Label_8                 : 'パスワード（任意）: ',
-ADD_Ledger_0a               : 'セキュアコネクション（SSL)で再度MyEtherWalletを開いてください。 ',
-ADD_Ledger_0b               : 'MyEtherWalletを再度「Chrome」(https://www.google.com/chrome/browser/desktop/) あるいは [Opera](https://www.opera.com/)で開いてください。 ',
+ADD_Ledger_0a               : 'セキュアコネクション（SSL)で再度MyKowalaWalletを開いてください。 ',
+ADD_Ledger_0b               : 'MyKowalaWalletを再度「Chrome」(https://www.google.com/chrome/browser/desktop/) あるいは [Opera](https://www.opera.com/)で開いてください。 ',
 ADD_Ledger_1                : '自分の Ledger Wallet　を接続する ',
 ADD_Ledger_2                : 'イサリアムアプリケーション（あるいはコントラクトアプリケーション）を開く　。 ',
 ADD_Ledger_2_Exp            : 'Expanseアプリケーション（または契約アプリケーション）を開きます。',
@@ -261,7 +261,7 @@ CONTRACT_Write              : '書き込み ',
 
 CX_error_1                  : 'お財布が保存されていません。["Add Wallet"](/cx-wallet.html#add-wallet)をクリックして追加してください。 ',
 CX_quicksend                : '簡易送信 ', // if no appropriate translation, just use "Send"
-CX_Tagline                  : 'オープンソース JavaScript クライアントサイド Etherお財布 Chrome Extension ',
+CX_Tagline                  : 'オープンソース JavaScript クライアントサイド kUSDお財布 Chrome Extension ',
 CX_Warning_1                : '必ずここに保管するすべてのお財布の「外部バックアップ」を作成してください。このChrome Extensionでは、再導入などで、データが保存されずの消失することが頻繁に起こります。このエクステンションは容易な操作を提供するのみで、「バックアップ」は行いません。 ',
 
 decrypt_Access              : 'どの方法でお財布を操作しますか？ ',
@@ -290,7 +290,7 @@ ERROR_13                    : '(error_14) 同じニックネームのお財布�
 ERROR_14                    : '(error_15) お財布が見つかりません。 (Wallet not found.) ',
 ERROR_15                    : '(error_16) このIDのプロポーサルは存在しない、あるいは正常に読み込みできません。 (Whoops. It doesn\'t look like a proposal with this ID exists yet or there is an error reading this proposal.) ',
 ERROR_16                    : '(error_17) 同じアドレスのお財布が既に存在します。お財布のページをご確認ください。 (A wallet with this address already exists in storage. Please check your wallets page.) ',
-ERROR_17                    : '(error_18) "ファンドが足りません。 トランザクション送出元のファンドが不足しています。ガスとして使われるために、少なくとも0.01 etherがお財布上に必要です。 (Insufficient balance. Your gas limit * gas price + amount to send exceeds your current balance. Send more ETH to your account or use the "Send Entire Balance" button. If you believe this is in error, try pressing generate again. Required (d+) and got: (d+). [Learn More.](https://myetherwallet.github.io/knowledge-base/transactions/transactions-not-showing-or-pending.html)) ',
+ERROR_17                    : '(error_18) "ファンドが足りません。 トランザクション送出元のファンドが不足しています。ガスとして使われるために、少なくとも0.01 etherがお財布上に必要です。 (Insufficient balance. Your gas limit * gas price + amount to send exceeds your current balance. Send more kUSD to your account or use the "Send Entire Balance" button. If you believe this is in error, try pressing generate again. Required (d+) and got: (d+). [Learn More.](https://myetherwallet.github.io/knowledge-base/transactions/transactions-not-showing-or-pending.html)) ',
 ERROR_18                    : '(error_19) 全てのガスがこのトランザクションにより消費されます。これは、既に投票を行ったか、あるいはディベート期間が終了したためです。 (All gas would be used on this transaction. This means you have already voted on this proposal or the debate period has ended.) ',
 ERROR_19                    : '(error_20) 無効なシンボル (Please enter a valid symbol) ',
 ERROR_20                    : '(error_21)  は有効なERC-20トークンではありません。もし他のトークンをロード中であれば、このトークンを取り除いてからもう一度試してください。 (Not a valid ERC-20 token) ',
@@ -301,7 +301,7 @@ ERROR_24                    : '(error_25) 正しいポートを入力してく�
 ERROR_25                    : '(error_26) 正しい chain ID を入力してください (Please enter a valid chain ID.) ',
 ERROR_26                    : '(error_27) 正しい ABI を入力してください (Please enter a valid ABI.) ',
 ERROR_27                    : '(error_28) 最小値: 0.01. 最大値: (Minimum amount: 0.01. Max amount:) ',
-ERROR_28                    : '(error_29) お財布を操作するためには**Keystore/JSONとパスワードか秘密鍵が必要** 保存してから、外部バックアップしてください！ここで保存しないとお財布が使用できなくなります。詳細はヘルプページを参照してください。(https://www.myetherwallet.com/#help) (You need this `Keystore File + Password` or the `Private Key` (next page) to access this wallet in the future. ) ',
+ERROR_28                    : '(error_29) お財布を操作するためには**Keystore/JSONとパスワードか秘密鍵が必要** 保存してから、外部バックアップしてください！ここで保存しないとお財布が使用できなくなります。詳細はヘルプページを参照してください。(https://testnet-wallet.kowala.io/#help) (You need this `Keystore File + Password` or the `Private Key` (next page) to access this wallet in the future. ) ',
 ERROR_29                    : '(error_30) 正しいユーザーとパスワードを入力してください (Please enter a valid user and password.) ',
 ERROR_30                    : '(error_31) 正しい ENS名を入力してください (Please enter a valid name (7+ characters, limited punctuation)) ',
 ERROR_31                    : '(error_32) 無効な秘密フレーズです (Please enter a valid secret phrase.) ',
@@ -314,10 +314,10 @@ ERROR_37                    : '(error_38) １６進数を正しく入力して�
 ERROR_38                    : '(error_39) Offer must have either price or reserve set to more than 0',
 ERROR_39                    : '(error_40) Bid must be more than the specified minimum',
 
-GETH_Balance                : '(geth-01) 残高不足 Insufficient balance. Your gas limit * gas price + amount to send exceeds your current balance. Send more ETH to your account or use the "Send Entire Balance" button. If you believe this is in error, try pressing generate again. Required (d+) and got: (d+). [Learn More.](https://myetherwallet.github.io/knowledge-base/transactions/transactions-not-showing-or-pending.html)',
+GETH_Balance                : '(geth-01) 残高不足 Insufficient balance. Your gas limit * gas price + amount to send exceeds your current balance. Send more kUSD to your account or use the "Send Entire Balance" button. If you believe this is in error, try pressing generate again. Required (d+) and got: (d+). [Learn More.](https://myetherwallet.github.io/knowledge-base/transactions/transactions-not-showing-or-pending.html)',
 GETH_Cheap                  : '(geth-02) ガス価格が低すぎます Gas price too low for acceptance. Try raising the gas price to 21 GWEI via the dropdown in top-right.',
 GETH_GasLimit               : '(geth-03) ブロックガスリミットを越えています Exceeds block gas limit. Transaction cost exceeds current gas limit. Limit: (d+), got: (d+). Please lower the gas limit to 21000 (for sending) or 200000 (for sending tokens or contracts) and try again. [Learn More](https://myetherwallet.github.io/knowledge-base/gas/what-is-gas-ethereum.html)',
-GETH_InsufficientFunds      : '(geth-04) ガス*価格+数量に足りません Insufficient balance. Your gas limit * gas price + amount to send exceeds your current balance. Send more ETH to your account or use the "Send Entire Balance" button. If you believe this is in error, try pressing generate again. Required (d+) and got: (d+). [Learn More.](https://myetherwallet.github.io/knowledge-base/transactions/transactions-not-showing-or-pending.html)',
+GETH_InsufficientFunds      : '(geth-04) ガス*価格+数量に足りません Insufficient balance. Your gas limit * gas price + amount to send exceeds your current balance. Send more kUSD to your account or use the "Send Entire Balance" button. If you believe this is in error, try pressing generate again. Required (d+) and got: (d+). [Learn More.](https://myetherwallet.github.io/knowledge-base/transactions/transactions-not-showing-or-pending.html)',
 GETH_IntrinsicGas           : '(geth-05) 基本のガス不足です Intrinsic gas too low. Try raising the gas price to 21 GWEI via the dropdown in top-right or the gas limit to 21000 (for sending) or 200000 (for sending tokens or contracts) and try again.',
 GETH_InvalidSender          : '(geth-06) 送出元が無効です Invalid sender.',
 GETH_NegativeValue          : '(geth-07) 負の値です Negative value.',
@@ -341,7 +341,7 @@ FOOTER_3                    : 'クライアントサイドお財布制作 ',
 FOOTER_4                    : '免責事項 ',
 
 GAS_PRICE_Desc              : 'ガス価格は、ガスの一単位にかかるの料金のことです。 「処理料金 = ガス価格 ＊ ガスリミット」で算出され、自分の処理をブロックに配置するためにマイナーに支払う手数料です。ガス価格が高いほど処理は早く行われますが、料金は高くなります。デファルトは 「20 GWEI」です。', /*Gas Price is the amount you pay per unit of gas. `TX fee = gas price * gas limit` & is paid to miners for including your TX in a block. Higher the gas price = faster transaction, but more expensive. Default is `41 GWEI`.*/
-GAS_LIMIT_Desc              : 'ガスリミットは、その処理のために送出するガスの総量です。「処理料金 = ガス価格 ＊ ガスリミット」で算出され、自分の処理をブロックに配置するための料金として支払われます。 この数字を増やしても、自分の処理が早くなることはありません。ETHの送出 = 「２１０００」、トークンの送出 = ~「２０００００」が目安になります。', /*Gas limit is the amount of gas to send with your TX. `TX fee` = gas price * gas limit & is paid to miners for including your TX in a block. Increasing this number will not get your TX mined faster. Sending ETH = `21000`. Sending Tokens = ~`200000`.*/
+GAS_LIMIT_Desc              : 'ガスリミットは、その処理のために送出するガスの総量です。「処理料金 = ガス価格 ＊ ガスリミット」で算出され、自分の処理をブロックに配置するための料金として支払われます。 この数字を増やしても、自分の処理が早くなることはありません。kUSDの送出 = 「２１０００」、トークンの送出 = ~「２０００００」が目安になります。', /*Gas limit is the amount of gas to send with your TX. `TX fee` = gas price * gas limit & is paid to miners for including your TX in a block. Increasing this number will not get your TX mined faster. Sending kUSD = `21000`. Sending Tokens = ~`200000`.*/
 /* Gen Wallet Updates */
 GEN_desc                    : '複数のお財布の作成をこのタブで行う事ができます： ',
 GEN_Help_1                  : 'この', /* Use your */
@@ -355,7 +355,7 @@ GEN_Help_8                  : 'ファイルをダウンロードしませんで�
 GEN_Help_9                  : 'Google Chromeをお使いください', /* Try using Google Chrome */
 GEN_Help_10                 : '右クリックしてファイルを保存。ファイル名: ', /* Right click & save file as. Filename:  */
 GEN_Help_11                 : 'このファイルは自分のコンピューターで開かないでください', /*Don\'t open this file on your computer */
-GEN_Help_12                 : 'MyEtherWalletの上でこれを使って自分のお財布をアンロックしてください（Mist, Geth, Parityや他のお財布クライアントも可）', /*Use it to unlock your wallet via MyEtherWallet (or Mist, Geth, Parity and other wallet clients.)*/
+GEN_Help_12                 : 'MyKowalaWalletの上でこれを使って自分のお財布をアンロックしてください（Mist, Geth, Parityや他のお財布クライアントも可）', /*Use it to unlock your wallet via MyKowalaWallet (or Mist, Geth, Parity and other wallet clients.)*/
 GEN_Help_13                 : '自分のキーストアファイルのバックアップ作成方法', /*How to Back Up Your Keystore File */
 GEN_Help_14                 : 'これらの方式の違いは？',　/*What are these Different Formats? */
 GEN_Help_15                 : '自分の資金の紛失や盗難を防止する。', /* Preventing loss & theft of your funds. */
@@ -375,7 +375,7 @@ GEN_Unlock                  : '自分のアドレスを確認するために、�
 GET_ConfButton              : '理解できました。続けます。', /*I understand. Continue.*/
 
 MEW_Warning_1               : 'お財布を操作したり新しいお財布を作成する前に、必ずURLを確認してください。詐欺サイトに御注意ください！ ',
-MEW_Tagline                 : 'オープンソース JavaScript クライアントサイド Etherお財布 ',
+MEW_Tagline                 : 'オープンソース JavaScript クライアントサイド kUSDお財布 ',
 
 MNEM_1                      : '操作したいアドレスを選択してください。 ',
 MNEM_2                      : 'ＨＤニーモニックの一つの文節で、複数のお財布やアドレスが操作可能です。操作したいアドレスを選択してください。 ',
@@ -404,7 +404,7 @@ MYWAL_Edit_2                : 'お財布を編集： ',
 MYWAL_Name                  : 'お財布名 ',
 MYWAL_Content_1             : '警告！　お財布を消去しようとしています： ',
 MYWAL_Content_2             : '**秘密鍵と鍵保存ファイル及びパスワード**が保管されているか確認してください。 ',
-MYWAL_Content_3             : 'MyEtherWallet CXでこのお財布を使用するためには、秘密鍵あるいはJSONとパスワードを手動で追加する必要があります。 ',
+MYWAL_Content_3             : 'MyKowalaWallet CXでこのお財布を使用するためには、秘密鍵あるいはJSONとパスワードを手動で追加する必要があります。 ',
 
 NAV_AddWallet               : 'お財布の追加 ',
 NAV_BulkGenerate            : 'バルク作成 ',
@@ -421,7 +421,7 @@ NAV_InteractContract        : '契約を操作 ',
 NAV_Multisig                : '多重署名 ',
 NAV_MyWallets               : '自分のお財布 ',
 NAV_Offline                 : 'オフライン送出 ',
-NAV_SendEther               : 'Ether/トークンの送出 ',
+NAV_SendEther               : 'kUSD/トークンの送出 ',
 NAV_SendTokens              : 'トークン送出 ',
 NAV_SignMsg                 : 'メッセージ署名 ',
 NAV_Swap                    : '通貨の両替 ',
@@ -431,7 +431,7 @@ NAV_YourWallets             : '自分のお財布 ',
 
 NODE_Title                  : 'カスタムノードをセットアップ',
 NODE_Subtitle               : 'ローカルノードに接続するには...',
-NODE_Warning                : 'MyEtherWallet.com 経由で接続するためには、HTTPSノードが必要です。[MyEtherWalletをレポジトリからダウンロードして、手元で走らせ、](https://github.com/kvhnuke/etherwallet/releases/latest)いずれかのノードに接続することもできます。 あるいは、無料のSSL証明書を[LetsEncrypt](https://letsencrypt.org/)から入手してください',
+NODE_Warning                : 'testnet-wallet.kowala.io 経由で接続するためには、HTTPSノードが必要です。[MyKowalaWalletをレポジトリからダウンロードして、手元で走らせ、](https://github.com/kvhnuke/etherwallet/releases/latest)いずれかのノードに接続することもできます。 あるいは、無料のSSL証明書を[LetsEncrypt](https://letsencrypt.org/)から入手してください',
 NODE_Name                   : 'ノード名',
 NODE_Port                   : 'ノードポート',
 NODE_CTA                    : '保存してカスタムノードを使用',
@@ -472,7 +472,7 @@ SEND_TransferTotal          : '残高をすべて送出する ',
 SENDModal_Content_1         : '送出準備が ',
 SENDModal_Content_2         : 'について、アドレス ',
 SENDModal_Content_3         : 'に対し完了。本当に送出してよろしいですか？ ',
-SENDModal_Content_4         : 'ノート：最も起こりやすいエラーの原因は、送出のためのガス不足で、その場合には、ETHを追加する必要があります。ガスはETHで支払われます。 ',
+SENDModal_Content_4         : 'ノート：最も起こりやすいエラーの原因は、送出のためのガス不足で、その場合には、kUSDを追加する必要があります。ガスはkUSDで支払われます。 ',
 SENDModal_No                : 'いいえ、中断します。 ',
 SENDModal_Title             : '警告！ ',
 SENDModal_Yes               : 'はい、確かです。処理を実行します。 ',
@@ -483,7 +483,7 @@ sidebar_AccountBal          : 'アカウント残高 ',
 sidebar_TokenBal            : 'トークン残高 ',
 sidebar_Equiv               : '等価 ',
 sidebar_TransHistory        : 'トランザクション履歴 ',
-sidebar_donation            : 'MyEtherWalletは、プライバシーとセキュリティのための無料のオープンソースサービスです。　寄付が増えることによって、新機能やフィードバックの反映を行い、よりユーザーの皆様のご希望に沿った制作の時間を増やす事が可能になります。私たちは、たった二人で世界を変えようとしています。お手伝いいただけますか? ',
+sidebar_donation            : 'MyKowalaWalletは、プライバシーとセキュリティのための無料のオープンソースサービスです。　寄付が増えることによって、新機能やフィードバックの反映を行い、よりユーザーの皆様のご希望に沿った制作の時間を増やす事が可能になります。私たちは、たった二人で世界を変えようとしています。お手伝いいただけますか? ',
 sidebar_donate              : '寄付する ',
 sidebar_thanks              : '感謝します!!! ',
 sidebar_DisplayOnTrezor     : 'TREZORでアドレスを表示',
@@ -499,7 +499,7 @@ SUCCESS_7                   : 'メッセージの署名が確認されました'
 
 SWAP_rates                  : "現在のレート ",
 SWAP_init_1                 : "両替する ",
-SWAP_init_2                 : " を ", // "I want to swap my X ETH for X BTC"
+SWAP_init_2                 : " を ", // "I want to swap my X kUSD for X BTC"
 SWAP_init_CTA               : "次へ ", // or "Continue"
 SWAP_information            : "あなたの情報 ",
 SWAP_send_amt               : "送出総額 ",
@@ -512,11 +512,11 @@ SWAP_time                   : "送出するまでにあと、 ",
 SWAP_elapsed				        : "発注後の経過時間 ", /*Time elapsed since sent*/
 SWAP_progress_1             : "注文を開始しました ",
 SWAP_progress_2             : "到着待機中 ", // Waiting for your BTC...
-SWAP_progress_3             : "ETH受け取り完了 ", // ETH Received!
+SWAP_progress_3             : "kUSD受け取り完了 ", // kUSD Received!
 SWAP_progress_4             : "送出中 {{orderResult.output.currency}} ",
 SWAP_progress_5             : "注文完了 ",
-SWAP_order_CTA              : "お送りいただきたいのは ", // Please send 1 ETH...
-SWAP_unlock                 : "このページから直接ETHあるいはトークンを送出するためには、お財布を解錠してください。",
+SWAP_order_CTA              : "お送りいただきたいのは ", // Please send 1 kUSD...
+SWAP_unlock                 : "このページから直接kUSDあるいはトークンを送出するためには、お財布を解錠してください。",
 
 TOKEN_Addr                  : 'トークン契約アドレス： ',
 TOKEN_Symbol                : 'トークンシンボル： ',
@@ -528,7 +528,7 @@ TRANS_advanced              : '+上級：ガスあるいはデータを追加し
 TRANS_data                  : 'データ： ',
 TRANS_desc                  : 'トークンを送出するには「トークン送出」のタブを選択してください。 ',
 TRANS_gas                   : 'ガスリミット： ',
-TRANS_sendInfo              : '21000ガスを使用する標準トランザクションは、0.000441 ETHを消費します。迅速な処理を行うために、若干最小量よりも多めの0.000000021 ETHのガスを使用します。当サービスでは、トランザクション料金は徴収いたしません。 ',
+TRANS_sendInfo              : '21000ガスを使用する標準トランザクションは、0.000441 kUSDを消費します。迅速な処理を行うために、若干最小量よりも多めの0.000000021 kUSDのガスを使用します。当サービスでは、トランザクション料金は徴収いたしません。 ',
 
 translate_version           : '0.5',
 Translator_Desc             : '日本語開発者を支援する： ',
@@ -551,15 +551,15 @@ tx_foundInPending_3         : 'この処理を取り消す、あるいは置き�
 tx_FoundOnChain             : '処理が見つかりました',
 tx_FoundOnChain_1           : 'あなたの待機中の処理は発掘され、ブロックチェーンに配置されました。',
 tx_FoundOnChain_2           : '**もし赤い `( ! )`, `BAD INSTRUCTION` あるいは `OUT OF GAS` のエラーメッセージを見つけたら**, これは、処理送出に失敗したということです。処理の取り消しや置き換えはできません。代わりに、新しい処理を送出してください。 "Out of Gas" エラーの場合には, ガスリミットをはじめに指定した値の倍にしてください。',
-tx_FoundOnChain_3           : '**何もエラーメッセージが返ってこなければ、あなたの処理は正しく送出されています。** ETHあるいはトークンは、送ろうとしたあて先の場所にあります。 もし、ETHやトークンが他のお財布や交換所のお財布に見つからず、処理を開始してから２４時間以上経っていたら、 [そのサービスに連絡](https://myetherwallet.github.io/knowledge-base/diving-deeper/ethereum-list-of-support-and-communities.html)してください。状況を確認してもらうために、自分の処理のリンクをうまく知らせてください。',
+tx_FoundOnChain_3           : '**何もエラーメッセージが返ってこなければ、あなたの処理は正しく送出されています。** kUSDあるいはトークンは、送ろうとしたあて先の場所にあります。 もし、kUSDやトークンが他のお財布や交換所のお財布に見つからず、処理を開始してから２４時間以上経っていたら、 [そのサービスに連絡](https://myetherwallet.github.io/knowledge-base/diving-deeper/ethereum-list-of-support-and-communities.html)してください。状況を確認してもらうために、自分の処理のリンクをうまく知らせてください。',
 tx_notFound                 : '対象の処理が見つかりません',
 tx_notFound_1               : 'この処理は、現在接続中の処理プールの中にありませんでした。',
 tx_notFound_2               : 'もし今、処理を送出した直後であれば、１５秒待ってから「処理状況を確認」ボタンを再度押してください。',
 tx_notFound_3               : '別の処理プールで発掘待ちになっているかもしれません。',
-tx_notFound_4               : '右上の下展開メニューから、別のノードを選択してください。 (例： `ETH (Etherscan.io)` or `ETH (Infura.io)` or `ETH (MyEtherWallet)`) から選んで再度確認する。',
+tx_notFound_4               : '右上の下展開メニューから、別のノードを選択してください。 (例： `kUSD (Etherscan.io)` or `kUSD (Infura.io)` or `kUSD (MyKowalaWallet)`) から選んで再度確認する。',
 tx_Summary                  : '数日後に処理状況を確認した場合をのぞいて、大量の処理発生時(ICO期間など)には、数時間処理が遅れる場合があります。本ツールは、そのような状況において処理待ちの処理を探し出し取り消す、あるいは更新する機能を提供します。＊＊これは特殊な操作で、処理プールが満杯の場合にのみ有効です。  [このツールに関しては、こちらを参考にしてください。](https://myetherwallet.github.io/knowledge-base/transactions/check-status-of-ethereum-transaction.html)**',
 
-TXFEE_Desc                  : 'この処理料金は自分の処理をブロックに配置するためにマイナーに支払われます。「ガスリミット」＊「ガス価格」で算出されます。 [GWEI -> ETHの単位変換はこちらです。](https://www.myetherwallet.com/helpers.html)',　/*The TX Fee is paid to miners for including your TX in a block. It is the `gas limit` * `gas price`. [You can convert GWEI -> ETH here](https://www.myetherwallet.com/helpers.html)*/
+TXFEE_Desc                  : 'この処理料金は自分の処理をブロックに配置するためにマイナーに支払われます。「ガスリミット」＊「ガス価格」で算出されます。 [GWEI -> kUSDの単位変換はこちらです。](https://testnet-wallet.kowala.io/helpers.html)',　/*The TX Fee is paid to miners for including your TX in a block. It is the `gas limit` * `gas price`. [You can convert GWEI -> kUSD here](https://testnet-wallet.kowala.io/helpers.html)*/
 
 VIEWWALLET_HidePrivKey      : '(hide)',
 VIEWWALLET_ShowPrivKey      : '(show)',
@@ -579,13 +579,13 @@ x_TransHash                 : '処理ハッシュ',
 x_TXFee                     : '処理料',
 x_TxHash                    : '処理ハッシュ',
 x_Access                    : 'アクセス ',
-x_AddessDesc                : '自分のアドレスは、アカウント番号や公開キーでも知ることができます。誰かとETHやトークンの受け渡しをするために、これらを用います。きれいな色のついたアドレスアイコンを見つけてください。自分のペーパーウォレットや、アドレスを入力する際に、同じアイコンであることをしっかりと確認してください。 これは自分のアカウント番号と公開鍵になります。ETHを送信するために必要な情報です。アイコンは自分のアドレスを識別するものです。 ',
+x_AddessDesc                : '自分のアドレスは、アカウント番号や公開キーでも知ることができます。誰かとkUSDやトークンの受け渡しをするために、これらを用います。きれいな色のついたアドレスアイコンを見つけてください。自分のペーパーウォレットや、アドレスを入力する際に、同じアイコンであることをしっかりと確認してください。 これは自分のアカウント番号と公開鍵になります。kUSDを送信するために必要な情報です。アイコンは自分のアドレスを識別するものです。 ',
 x_Address                   : '自分のアドレス ',
 x_Cancel                    : '取り消す ',
 x_CSV                       : 'CSV ファイル (未暗号化) ',
 x_Download                  : 'ダウンロード ',
 x_Json                      : 'JSON ファイル (未暗号化) ',
-x_JsonDesc                  : 'これはパスワードが不要な暗号化されていないJSONフォーマットの秘密鍵です。この暗号化されていないJSONフォーマットの秘密鍵を使えば、誰でもパスワードを使わずに自分のお財布とEtherにアクセスできます。 ',
+x_JsonDesc                  : 'これはパスワードが不要な暗号化されていないJSONフォーマットの秘密鍵です。この暗号化されていないJSONフォーマットの秘密鍵を使えば、誰でもパスワードを使わずに自分のお財布とkUSDにアクセスできます。 ',
 x_Keystore                  : 'Keystore ファイル (UTC / JSON · 推奨 · 暗号化) ',
 x_Keystore2                 : 'Keystore ファイル (UTC / JSON) ',
 x_KeystoreDesc              : 'この Keystore / JSON ファイルは、後で容易にインポートするため、Mistで使われているフォーマットと一致させる必要があります。ダウンロードしてバックアップを取ることをおすすめします。 ',
@@ -606,11 +606,11 @@ x_TXT                       : 'TXT ファイル (未暗号化) ',
 x_Wallet                    : 'お財布 ',
 
 HELP_0_Title                : '0) I\'m new. What do I do? ',
-HELP_0_Desc_1               : 'MyEtherWallet gives you the ability to generate new wallets so you can store your Ether yourself, not on an exchange. This process happens entirely on your computer, not our servers. Therefore, when you generate a new wallet, **you are responsible for safely backing it up**. ',
+HELP_0_Desc_1               : 'MyKowalaWallet gives you the ability to generate new wallets so you can store your kUSD yourself, not on an exchange. This process happens entirely on your computer, not our servers. Therefore, when you generate a new wallet, **you are responsible for safely backing it up**. ',
 HELP_0_Desc_2               : 'Create a new wallet. ',
 HELP_0_Desc_3               : 'Back the wallet up. ',
 HELP_0_Desc_4               : 'Verify you have access to this new wallet and have correctly saved all necessary information. ',
-HELP_0_Desc_5               : 'Transfer Ether to this new wallet. ',
+HELP_0_Desc_5               : 'Transfer kUSD to this new wallet. ',
 HELP_1_Title                : '1) How do I create a new wallet? ',
 HELP_1_Desc_1               : 'Go to the "Generate Wallet" page. ',
 HELP_1_Desc_2               : 'Go to the "Add Wallet" page & select "Generate New Wallet" ',
@@ -619,12 +619,12 @@ HELP_1_Desc_4               : 'Click "GENERATE". ',
 HELP_1_Desc_5               : 'Your wallet has now been generated. ',
 HELP_2a_Desc_1              : 'You should always back up your wallet externally and in multiple physical locations - like on a USB drive and/or a piece of paper. ',
 HELP_2a_Desc_2              : 'Save the address. You can keep it to yourself or share it with others. That way, others can transfer ether to you. ',
-HELP_2a_Desc_3              : 'Save versions of the private key. Do not share it with anyone else. Your private key is necessary when you want to access your Ether to send it! There are 3 types of private keys: ',
+HELP_2a_Desc_3              : 'Save versions of the private key. Do not share it with anyone else. Your private key is necessary when you want to access your kUSD to send it! There are 3 types of private keys: ',
 HELP_2a_Desc_4              : 'Place your address, versions of the private key, and the PDF version of your paper wallet in a folder. Save this on your computer and a USB drive. ',
 HELP_2a_Desc_5              : 'Print the wallet if you have a printer. Otherwise, write down your private key and address on a piece of paper. Store this as a secure location, separate from your computer and the USB drive. ',
 HELP_2a_Desc_6              : 'Keep in mind, you must prevent loss of the keys and password due to loss or failure of you hard drive failure, or USB drive, or piece of paper. You also must keep in mind physical loss / damage of an entire area (think fire or flood). ',
 HELP_2a_Title               : 'お財布の保管やバックアップの方法は？ ',
-HELP_2b_Title               : '2b) How do I safely / offline / cold storage with MyEtherWallet? ',
+HELP_2b_Title               : '2b) How do I safely / offline / cold storage with MyKowalaWallet? ',
 HELP_2b_Desc_1              : 'Go to [https://github.com/kvhnuke/etherwallet/releases/latest](https://github.com/kvhnuke/etherwallet/releases/latest). ',
 HELP_2b_Desc_2              : 'Click on `etherwallet-vX.X.X.X.zip`. ',
 HELP_2b_Desc_3              : 'Move zip to an airgapped computer. ',
@@ -634,17 +634,17 @@ HELP_2b_Desc_6              : 'Save the address. Save versions of the private ke
 HELP_2b_Desc_7              : 'Store these papers / USBs in multiple physically separate locations. ',
 HELP_2b_Desc_8              : 'Go to the "View Wallet Info" page and type in your private key / password to ensure they are correct and access your wallet. Check that the address you wrote down is the same. ',
 HELP_3_Title                : '3) How do I verify I have access to my new wallet? ',
-HELP_3_Desc_1               : '**Before you send any Ether to your new wallet**, you should ensure you have access to it. ',
+HELP_3_Desc_1               : '**Before you send any kUSD to your new wallet**, you should ensure you have access to it. ',
 HELP_3_Desc_2               : 'Navigate to the "View Wallet Info" page. ',
-HELP_3_Desc_3               : 'Navigate to the MyEtherWallet.com "View Wallet Info" page. ',
+HELP_3_Desc_3               : 'Navigate to the testnet-wallet.kowala.io "View Wallet Info" page. ',
 HELP_3_Desc_4               : 'Select your wallet file -or- your private key and unlock your wallet. ',
 HELP_3_Desc_5               : 'If the wallet is encrypted, a text box will automatically appear. Enter the password. ',
 HELP_3_Desc_6               : 'Click the "Unlock Wallet" button. ',
 HELP_3_Desc_7               : 'Your wallet information should show up. Find your account address, next to a colorful, circular icon. This icon visually represents your address. Be certain that the address is the address you have saved to your text document and is on your paper wallet. ',
 HELP_3_Desc_8               : 'If you are planning on holding a large amount of ether, we recommend that send a small amount of ether from new wallet before depositing a large amount. Send 0.001 ether to your new wallet, access that wallet, send that 0.001 ether to another address, and ensure everything works smoothly. ',
-HELP_4_Title                : '4) How do I send Ether from one wallet to another? ',
+HELP_4_Title                : '4) How do I send kUSD from one wallet to another? ',
 HELP_4_Desc_1               : 'If you plan to move a large amount of ether, you should test sending a small amount to your wallet first to ensure everything goes as planned. ',
-HELP_4_Desc_2               : 'Navigate to the "Ether送出 トークン送出" page. ',
+HELP_4_Desc_2               : 'Navigate to the "kUSD送出 トークン送出" page. ',
 HELP_4_Desc_3               : 'Select your wallet file -or- your private key and unlock your wallet. ',
 HELP_4_Desc_4               : 'If the wallet is encrypted, a text box will automatically appear. Enter the password. ',
 HELP_4_Desc_5               : 'Click the "Unlock Wallet" button. ',
@@ -655,8 +655,8 @@ HELP_4_Desc_10              : 'A couple more fields will appear. This is your br
 HELP_4_Desc_11              : 'Click the blue "Send Transaction" button below that. ',
 HELP_4_Desc_12              : 'A pop-up will appear. Verify that the amount and the address you are sending to are correct. Then click "Yes, I am sure! Make transaction." button. ',
 HELP_4_Desc_13              : 'The transaction will be submitted. The TX Hash will display. You can click that TX Hash to see it on the blockchain. ',
-HELP_4CX_Title              : '4) How do I send Ether using MyEtherWallet CX? ',
-HELP_4CX_Desc_1             : 'First, you need to add a wallet. Once you have done that, you have 2 options: the "QuickSend" functionality from the Chrome Extension icon or the "Ether送出 トークン送出" page. ',
+HELP_4CX_Title              : '4) How do I send kUSD using MyKowalaWallet CX? ',
+HELP_4CX_Desc_1             : 'First, you need to add a wallet. Once you have done that, you have 2 options: the "QuickSend" functionality from the Chrome Extension icon or the "kUSD送出 トークン送出" page. ',
 HELP_4CX_Desc_2             : 'QuickSend: ',
 HELP_4CX_Desc_3             : 'Click the Chrome Extension Icon. ',
 HELP_4CX_Desc_4             : 'Click the "QuickSend" button. ',
@@ -667,12 +667,12 @@ HELP_4CX_Desc_8             : 'Click "Send Transaction". ',
 HELP_4CX_Desc_9             : 'Verify the address and the amount you are sending is correct. ',
 HELP_4CX_Desc_10            : 'Enter the password for that wallet. ',
 HELP_4CX_Desc_11            : 'Click "Send Transaction." ',
-HELP_4CX_Desc_12            : 'Using "Ether送出 トークン送出" Page ',
-HELP_5_Title                : '5) How do I run MyEtherWallet.com offline/locally? ',
-HELP_5_Desc_1               : 'You can run MyEtherWallet.com on your computer instead of from the GitHub servers. You can generate a wallet completely offline and send transactions from the "Offline Transaction" page. ',
-HELP_5_Desc_7               : 'MyEtherWallet.com is now running entirely on your computer. ',
-HELP_5_Desc_8               : 'In case you are not familiar, you need to keep the entire folder in order to run the website, not just `index.html`. Don\'t touch or move anything around in the folder. If you are storing a backup of the MyEtherWallet repo for the future, we recommend just storing the ZIP so you can be sure the folder contents stay intact. ',
-HELP_5_Desc_9               : 'As we are constantly updating MyEtherWallet.com, we recommend you periodically update your saved version of the repo. ',
+HELP_4CX_Desc_12            : 'Using "kUSD送出 トークン送出" Page ',
+HELP_5_Title                : '5) How do I run testnet-wallet.kowala.io offline/locally? ',
+HELP_5_Desc_1               : 'You can run testnet-wallet.kowala.io on your computer instead of from the GitHub servers. You can generate a wallet completely offline and send transactions from the "Offline Transaction" page. ',
+HELP_5_Desc_7               : 'testnet-wallet.kowala.io is now running entirely on your computer. ',
+HELP_5_Desc_8               : 'In case you are not familiar, you need to keep the entire folder in order to run the website, not just `index.html`. Don\'t touch or move anything around in the folder. If you are storing a backup of the MyKowalaWallet repo for the future, we recommend just storing the ZIP so you can be sure the folder contents stay intact. ',
+HELP_5_Desc_9               : 'As we are constantly updating testnet-wallet.kowala.io, we recommend you periodically update your saved version of the repo. ',
 HELP_5CX_Title              : '5) How can I install this extension from the repo instead of the Chrome Store? ',
 HELP_5CX_Desc_2             : 'Click on `chrome-extension-vX.X.X.X.zip` and unzip it. ',
 HELP_5CX_Desc_3             : 'Go to Google Chrome and find you settings (in the menu in the upper right). ',
@@ -683,7 +683,7 @@ HELP_5CX_Desc_7             : 'Navigate to the now-unzipped folder that you down
 HELP_5CX_Desc_8             : 'The extension should now show up in your extensions and in your Chrome Extension bar. ',
 HELP_7_Title                : '7) How do I send Tokens & add custom tokens? ',
 HELP_7_Desc_0               : '[Ethplorer.io](https://ethplorer.io/) is a great way to explore tokens and find the decimals of a token. ',
-HELP_7_Desc_1               : 'Navigate to the "Ether送出 トークン送出" page. ',
+HELP_7_Desc_1               : 'Navigate to the "kUSD送出 トークン送出" page. ',
 HELP_7_Desc_2               : 'Unlock your wallet. ',
 HELP_7_Desc_3               : 'Enter the address you would like to send to in the "To Address:" field. ',
 HELP_7_Desc_4               : 'Enter the amount you would like to send. ',
@@ -699,15 +699,15 @@ HELP_7_Desc_13              : 'Click the blue "Send Transaction" button below th
 HELP_7_Desc_14              : 'A pop-up will appear. Verify that the amount and the address you are sending to are correct. Then click "Yes, I am sure! Make transaction." button. ',
 HELP_7_Desc_15              : 'The transaction will be submitted. The TX Hash will display. You can click that TX Hash to see it on the blockchain. ',
 HELP_8_Title                : '8) What happens if your site goes down? ',
-HELP_8_Desc_1               : 'MyEtherWallet is not a web wallet. You don\'t have a login and nothing ever gets saved to our servers. It is simply an interface that allows you interact with the blockchain. ',
-HELP_8_Desc_2               : 'If MyEtherWallet.com goes down, you would have to find another way (like geth or Ethereum Wallet / Mist) to do what we are doing. But you wouldn\'t have to "get" your Ether out of MyEtherWallet because it\'s not in MyEtherWallet. It\'s in whatever wallet your generated via our site. ',
+HELP_8_Desc_1               : 'MyKowalaWallet is not a web wallet. You don\'t have a login and nothing ever gets saved to our servers. It is simply an interface that allows you interact with the blockchain. ',
+HELP_8_Desc_2               : 'If testnet-wallet.kowala.io goes down, you would have to find another way (like geth or Ethereum Wallet / Mist) to do what we are doing. But you wouldn\'t have to "get" your kUSD out of MyKowalaWallet because it\'s not in MyKowalaWallet. It\'s in whatever wallet your generated via our site. ',
 HELP_8_Desc_3               : 'You can import your unencrypted private key and your Geth/Mist Format (encrypted) files directly into geth / Ethereum Wallet / Mist very easily now. See question #12 below. ',
-HELP_8_Desc_4               : 'In addition, the likelihood of us taking MyEtherWallet down is slim to none. It costs us almost nothing to maintain as we aren\'t storing any information. If we do take the domain down, it still is, and always will be, publicly available at [https://github.com/kvhnuke/etherwallet](https://github.com/kvhnuke/etherwallet/tree/gh-pages). You can download the ZIP there and run it locally. ',
-HELP_8CX_Title              : '8) What happens if MyEtherWallet CX disappears? ',
+HELP_8_Desc_4               : 'In addition, the likelihood of us taking MyKowalaWallet down is slim to none. It costs us almost nothing to maintain as we aren\'t storing any information. If we do take the domain down, it still is, and always will be, publicly available at [https://github.com/kvhnuke/etherwallet](https://github.com/kvhnuke/etherwallet/tree/gh-pages). You can download the ZIP there and run it locally. ',
+HELP_8CX_Title              : '8) What happens if MyKowalaWallet CX disappears? ',
 HELP_8CX_Desc_1             : 'First, all data is saved on your computer, not our servers. I know it can be confusing, but when you look at the Chrome Extension, you are NOT looking at stuff saved on our servers somewhere - it\'s all saved on your own computer. ',
-HELP_8CX_Desc_2             : 'That said, it is **very important** that you back up all your information for any new wallets generated with MyEtherWallet CX. That way if anything happens to MyEtherWallet CX or your computer, you still have all the information necessary to access your Ether. See the #2a for how to back up your wallets. ',
-HELP_8CX_Desc_3             : 'If for some reason MyEtherWallet CX disappears from the Chrome Store, you can find the source on Github and load it manually. See #5 above. ',
-HELP_9_Title                : '9) Is the "Ether送出 トークン送出" page offline? ',
+HELP_8CX_Desc_2             : 'That said, it is **very important** that you back up all your information for any new wallets generated with MyKowalaWallet CX. That way if anything happens to MyKowalaWallet CX or your computer, you still have all the information necessary to access your kUSD. See the #2a for how to back up your wallets. ',
+HELP_8CX_Desc_3             : 'If for some reason MyKowalaWallet CX disappears from the Chrome Store, you can find the source on Github and load it manually. See #5 above. ',
+HELP_9_Title                : '9) Is the "kUSD送出 トークン送出" page offline? ',
 HELP_9_Desc_1               : 'No. It needs the internet in order to get the current gas price, nonce of your account, and broadcast the transaction (aka "send"). However, it only sends the signed transaction. Your private key safely stays with you. We also now provide an "Offline Transaction" page so that you can ensure your private keys are on an offline/airgapped computer at all times. ',
 HELP_10_Title               : '10) How do I make an offline transaction? ',
 HELP_10_Desc_1              : 'Navigate to the "Offline Transaction" page via your online computer. ',
@@ -721,8 +721,8 @@ HELP_10_Desc_8              : 'Select your wallet file -or- your private key and
 HELP_10_Desc_9              : 'Press the "GENERATE SIGNED TRANSACTION" button. ',
 HELP_10_Desc_10             : 'The data field below this button will populate with your signed transaction. Copy this and move it back to your online computer. ',
 HELP_10_Desc_11             : 'On your online computer, paste the signed transaction into the text field in step #3 and click send. This will broadcast your transaction. ',
-HELP_12_Title               : '12) How do I import a wallet created with MyEtherWallet into geth / Ethereum Wallet / Mist? ',
-HELP_12_Desc_1              : 'Using an Geth/Mist JSON file from MyEtherWallet v2+.... ',
+HELP_12_Title               : '12) How do I import a wallet created with MyKowalaWallet into geth / Ethereum Wallet / Mist? ',
+HELP_12_Desc_1              : 'Using an Geth/Mist JSON file from MyKowalaWallet v2+.... ',
 HELP_12_Desc_2              : 'Go to the "View Wallet Info" page. ',
 HELP_12_Desc_3              : 'Unlock your wallet using your **encrypted** private key or JSON file. ',
 HELP_12_Desc_4              : 'Go to the "My Wallets" page. ',
@@ -752,11 +752,11 @@ HELP_12_Desc_26             : 'This will prompt you to make a new password. This
 HELP_12_Desc_27             : 'After successful import, delete `nothing_special_delete_me.txt` ',
 HELP_12_Desc_28             : 'The next time you open the Ethereum Wallet application, your account will be listed under "Accounts". ',
 HELP_13_Title               : '13) What does "Insufficient funds. Account you try to send transaction from does not have enough funds. Required XXXXXXXXXXXXXXXXXXX and got: XXXXXXXXXXXXXXXX." Mean? ',
-HELP_13_Desc_1              : 'This means you do not have enough Ether in your account to cover the cost of gas. Each transaction (including token and contract transactions) require gas and that gas is paid in Ether. The number displayed is the amount required to cover the cost of the transaction in Wei. Take that number, divide by `1000000000000000000`, and subtract the amount of Ether you were trying to send (if you were attempting to send Ether). This will give you the amount of Ether you need to send to that account to make the transaction. ',
-HELP_14_Title               : '14) Some sites randomize (seed) the private key generation via mouse movements. MyEtherWallet.com doesn\'t do this. Is the random number generation for MyEtherWallet safe? ',
-HELP_14_Desc_1              : 'While the mouse moving thing is clever and we understand why people like it, the reality is window.crypto ensures more entropy than your mouse movements. The mouse movements aren\'t unsafe, it\'s just that we (and tons of other crypto experiments) believe in window.crypto. In addition, MyEtherWallet.com can be used on touch devices. Here\'s a [conversation between an angry redditor and Vitalik Buterin regarding mouse movements v. window.crypto](https://www.reddit.com/r/ethereum/comments/2bilqg/note_there_is_a_paranoid_highsecurity_way_to/cj5sgrm) and here is the [the window.crypto w3 spec](https://dvcs.w3.org/hg/webcrypto-api/raw-file/tip/spec/Overview.html#dfn-GlobalCrypto). ',
+HELP_13_Desc_1              : 'This means you do not have enough kUSD in your account to cover the cost of gas. Each transaction (including token and contract transactions) require gas and that gas is paid in kUSD. The number displayed is the amount required to cover the cost of the transaction in Wei. Take that number, divide by `1000000000000000000`, and subtract the amount of kUSD you were trying to send (if you were attempting to send kUSD). This will give you the amount of kUSD you need to send to that account to make the transaction. ',
+HELP_14_Title               : '14) Some sites randomize (seed) the private key generation via mouse movements. testnet-wallet.kowala.io doesn\'t do this. Is the random number generation for MyKowalaWallet safe? ',
+HELP_14_Desc_1              : 'While the mouse moving thing is clever and we understand why people like it, the reality is window.crypto ensures more entropy than your mouse movements. The mouse movements aren\'t unsafe, it\'s just that we (and tons of other crypto experiments) believe in window.crypto. In addition, testnet-wallet.kowala.io can be used on touch devices. Here\'s a [conversation between an angry redditor and Vitalik Buterin regarding mouse movements v. window.crypto](https://www.reddit.com/r/ethereum/comments/2bilqg/note_there_is_a_paranoid_highsecurity_way_to/cj5sgrm) and here is the [the window.crypto w3 spec](https://dvcs.w3.org/hg/webcrypto-api/raw-file/tip/spec/Overview.html#dfn-GlobalCrypto). ',
 HELP_15_Title               : '15) Why hasn\'t the account I just created show up in the blockchain explorer? (ie: etherchain, etherscan) ',
-HELP_15_Desc_1              : 'Accounts will only show up in a blockchain explorer once the account has activity on it&mdash;for example, once you have transferred some Ether to it. ',
+HELP_15_Desc_1              : 'Accounts will only show up in a blockchain explorer once the account has activity on it&mdash;for example, once you have transferred some kUSD to it. ',
 HELP_16_Title               : '16) How do I check the balance of my account? ',
 HELP_16_Desc_1              : 'You can use a blockchain explorer like [etherscan.io](https://etherscan.io/). Paste your address into the search bar and it will pull up your address and transaction history. For example, here\'s what our [donation account](https://etherscan.io/address/0xDECAF9CD2367cdbb726E904cD6397eDFcAe6068D) looks like on etherscan.io ',
 HELP_17_Title               : '17) Why isn\'t my balance showing up when I unlock my wallet? ',
@@ -778,21 +778,21 @@ HELP_21_Desc_8              : 'Of course, this all assumes that keys are generat
 HELP_Warning                : 'If you created a wallet -or- downloaded the repo before **Dec. 31st, 2015**, please check your wallets &amp; download a new version of the repo. Click for details. ',
 HELP_Desc                   : 'Do you see something missing? Have another question? [Get in touch with us](mailto:support@myetherwallet.com), and we will not only answer your question, we will update this page to be more useful to people in the future! ',
 HELP_Remind_Title           : 'Some reminders ',
-HELP_Remind_Desc_1          : '**Ethereum, MyEtherWallet.com & MyEtherWallet CX, and some of the underlying Javascript libraries we use are under active development.** While we have thoroughly tested & tens of thousands of wallets have been successfully created by people all over the globe, there is always the remote possibility that something unexpected happens that causes your ETH to be lost. Please do not invest more than you are willing to lose, and please be careful. If something were to happen, we are sorry, but **we are not responsible for the lost Ether**. ',
-HELP_Remind_Desc_2          : 'MyEtherWallet.com & MyEtherWallet CX are not "web wallets". You do not create an account or give us your Ether to hold onto. All data never leaves your computer/your browser. We make it easy for you to create, save, and access your information and interact with the blockchain. ',
+HELP_Remind_Desc_1          : '**Ethereum, testnet-wallet.kowala.io & MyKowalaWallet CX, and some of the underlying Javascript libraries we use are under active development.** While we have thoroughly tested & tens of thousands of wallets have been successfully created by people all over the globe, there is always the remote possibility that something unexpected happens that causes your kUSD to be lost. Please do not invest more than you are willing to lose, and please be careful. If something were to happen, we are sorry, but **we are not responsible for the lost kUSD**. ',
+HELP_Remind_Desc_2          : 'testnet-wallet.kowala.io & MyKowalaWallet CX are not "web wallets". You do not create an account or give us your kUSD to hold onto. All data never leaves your computer/your browser. We make it easy for you to create, save, and access your information and interact with the blockchain. ',
 HELP_Remind_Desc_3          : 'If you do not save your private key & password, there is no way to recover access to your wallet or the funds it holds.  Back them up in multiple physical locations &ndash; not just on your computer! ',
-HELP_SecCX_Title            : 'Security - MyEtherWallet CX ',
+HELP_SecCX_Title            : 'Security - MyKowalaWallet CX ',
 HELP_SecCX_Desc_1           : 'Where is this extension saving my information? ',
 HELP_SecCX_Desc_2           : 'The information you store in this Chrome Extension is saved via [chrome.storage](http://chrome.storage/). - this is the same place your passwords are saved when you save your password in Chrome. ',
 HELP_SecCX_Desc_3           : 'What information is saved? ',
 HELP_SecCX_Desc_4           : 'The address, nickname, private key is stored in chrome.storage. The private key is encrypted using the password you set when you added the wallet. The nickname and wallet address is not encrypted. ',
 HELP_SecCX_Desc_5           : 'Why aren\'t the nickname and wallet address encrypted? ',
-HELP_SecCX_Desc_6           : 'If we were to encrypt these items, you would need to enter a password each time you wanted to view your account balance or view the nicknames. If this concerns you, we recommend you use MyEtherWallet.com instead of this Chrome Extension. ',
+HELP_SecCX_Desc_6           : 'If we were to encrypt these items, you would need to enter a password each time you wanted to view your account balance or view the nicknames. If this concerns you, we recommend you use testnet-wallet.kowala.io instead of this Chrome Extension. ',
 HELP_Sec_Title              : 'Security ',
 HELP_Sec_Desc_1             : 'If one of your first questions is "Why should I trust these people?", that is a good thing. Hopefully the following will help ease your fears. ',
 HELP_Sec_Desc_2             : 'We\'ve been up and running since August 2015. If you search for ["myetherwallet" on reddit](https://www.reddit.com/search?q=myetherwallet), you can see numerous people who use us with great success. ',
 HELP_Sec_Desc_3             : 'We aren\'t going to take your money or steal your private key(s). There is no malicious code on this site. In fact the "GENERATE WALLET" pages are completely client-side. That means that all the code is executed on ** your computer** and it is never saved and transmitted anywhere. ',
-HELP_Sec_Desc_4             : 'Check the URL -- This site is being served through GitHub and you can see the source code here: [https://github.com/kvhnuke/etherwallet/tree/gh-pages](https://github.com/kvhnuke/etherwallet/tree/gh-pages) to [https://www.myetherwallet.com](https://www.myetherwallet.com). ',
+HELP_Sec_Desc_4             : 'Check the URL -- This site is being served through GitHub and you can see the source code here: [https://github.com/kvhnuke/etherwallet/tree/gh-pages](https://github.com/kvhnuke/etherwallet/tree/gh-pages) to [https://testnet-wallet.kowala.io](https://testnet-wallet.kowala.io). ',
 HELP_Sec_Desc_5             : 'For generating wallets, you can download the [source code and run it locally](https://github.com/kvhnuke/etherwallet/releases/latest). See #5 above. ',
 HELP_Sec_Desc_6             : 'Generate a test wallet and check and see what network activity is happening. The easiest way for you to do this is to right click on the page and click "inspect element". Go to the "Network" tab. Generate a test wallet. You will see there is no network activity. You may see something happening that looks like data:image/gif and data:image/png. Those are the QR codes being generated...on your computer...by your computer. No bytes were transferred. ',
 HELP_Sec_Desc_8             : 'If you do not feel comfortable using this tool, then by all means, do not use it. We created this tool as a helpful way for people to generate wallets and make transactions without needing to dive into command line or run a full node. Again, feel free to reach out if you have concerns and we will respond as quickly as possible. Thanks! ',

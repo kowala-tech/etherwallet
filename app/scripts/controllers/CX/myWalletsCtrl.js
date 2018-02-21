@@ -114,7 +114,7 @@ var myWalletsCtrl = function ($scope, $sce, walletService) {
         try {
             var priv = $scope.allWallets[$scope.viewWallet.id].priv;
             if (priv.length == 132)
-                $scope.wallet = Wallet.fromMyEtherWalletKey(priv, $scope.password);
+                $scope.wallet = Wallet.fromMyKowalaWalletKey(priv, $scope.password);
             else
                 $scope.wallet = Wallet.getWalletFromPrivKeyFile(priv, $scope.password);
             $scope.viewModal.close();

@@ -12,17 +12,17 @@
     <div class="col-sm-6 order-info">
       <p class="mono">
         <input class="form-control input-sm" ng-model="priceTicker.ETHBTC"/>
-        <span>ETH = {{bity.curRate.ETHBTC*priceTicker.ETHBTC | number: 6}} BTC</span>
+        <span>kUSD = {{bity.curRate.ETHBTC*priceTicker.ETHBTC | number: 6}} BTC</span>
       </p>
       <p class="mono">
         <input class="form-control input-sm" ng-model="priceTicker.ETHREP"/>
-        <span>ETH = {{bity.curRate.ETHREP*priceTicker.ETHREP | number: 6}} REP</span>
+        <span>kUSD = {{bity.curRate.ETHREP*priceTicker.ETHREP | number: 6}} REP</span>
       </p>
     </div>
     <div class="col-sm-6 order-info">
       <p class="mono">
         <input class="form-control input-sm" ng-model="priceTicker.BTCETH"/>
-        <span>BTC = {{bity.curRate.BTCETH*priceTicker.BTCETH | number: 6}} ETH</span>
+        <span>BTC = {{bity.curRate.BTCETH*priceTicker.BTCETH | number: 6}} kUSD</span>
       </p>
       <p class="mono">
         <input class="form-control input-sm" ng-model="priceTicker.BTCREP"/>

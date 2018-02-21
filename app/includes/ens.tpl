@@ -13,7 +13,7 @@
             Ethereum Name Service
           </a>
           is a distributed, open, and extensible naming system based on the Ethereum blockchain.
-          Once you have a name, you can tell your friends to send ETH to <code>mewtopia.eth</code> instead of <code>0x7cB57B5A97eAbe942.....</code>.
+          Once you have a name, you can tell your friends to send kUSD to <code>mewtopia.eth</code> instead of <code>0x7cB57B5A97eAbe942.....</code>.
         </p>
       </article>
       <!-- / Title -->
@@ -47,9 +47,9 @@
   <!-- IF NOT ENS CHAIN -->
   <div ng-hide="showENS()" class="alert alert-danger text-center">
     <p>
-      The ENS is only available on the ETH and Ropsten (Testnet) chains. You are currently on the {{ajaxReq.type}} chain.
+      The ENS is only available on the kUSD and Ropsten (Testnet) chains. You are currently on the {{ajaxReq.type}} chain.
       <br />
-      Please use the node switcher in the upper right corner to select "ETH" or "Ropsten".
+      Please use the node switcher in the upper right corner to select "kUSD" or "Ropsten".
     </p>
   </div>
   <!-- / IF NOT ENS CHAIN -->

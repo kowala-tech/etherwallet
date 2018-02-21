@@ -87,7 +87,7 @@
         <li translate="HELP_2a_Desc_3"></li>
         <ul>
           <li><strong translate="x_Keystore">Keystore/JSON File (Recommended · Encrypted · Mist/Geth Format):</strong> <span translate="x_KeystoreDesc">This Keystore / JSON file matches the format used by Mist & Geth so you can easily import it in the future. It is the recommended file to download and back up.</span></li>
-          <li><strong translate="x_Json">JSON File (unencrypted):</strong> <span translate="x_JsonDesc">This is the unencrypted, JSON format of your private key. This means you do not need the password but anyone who finds your JSON can access your wallet & Ether without the password.</span></li>
+          <li><strong translate="x_Json">JSON File (unencrypted):</strong> <span translate="x_JsonDesc">This is the unencrypted, JSON format of your private key. This means you do not need the password but anyone who finds your JSON can access your wallet & kUSD without the password.</span></li>
           <li><strong translate="x_PrivKey">Private Key (unencrypted):</strong> <span translate="x_PrivKeyDesc">This is the unencrypted text version of your private key, meaning no password is necessary. If someone were to find your unencrypted private key, they could access your wallet without a password. For this reason, encrypted versions are typically recommended.</span></li>
         </ul>
 
@@ -104,7 +104,7 @@
   <article class="collapse-container">
     <div ng-click="h2b = !h2b">
       <a class="collapse-button" ><span ng-show="!h2b">+</span><span ng-show="h2b">-</span></a>
-      <h4 translate="HELP_2b_Title"> 2b. How do I safely / offline / cold storage with MyEtherWallet? </h4>
+      <h4 translate="HELP_2b_Title"> 2b. How do I safely / offline / cold storage with MyKowalaWallet? </h4>
     </div>
     <div ng-show="h2b">
       <ol>
@@ -130,19 +130,19 @@
       <h4 translate="HELP_3_Title"> 3. How do I verify I have access to my new wallet? </h4>
     </div>
     <div ng-show="h3">
-      <p translate="HELP_3_Desc_1">**Before you send any Ether to your new wallet**, you should ensure you have access to it.</p>
+      <p translate="HELP_3_Desc_1">**Before you send any kUSD to your new wallet**, you should ensure you have access to it.</p>
       <ol>
         @@if (site === 'mew' ) {
         <li translate="HELP_3_Desc_2"> Navigate to the "View Wallet Info" page. </li>
         }
         @@if (site === 'cx' )  {
-        <li translate="HELP_3_Desc_3"> Navigate to the MyEtherWallet.com "View Wallet Info" page. </li>
+        <li translate="HELP_3_Desc_3"> Navigate to the testnet-wallet.kowala.io "View Wallet Info" page. </li>
         }
         <li translate="HELP_3_Desc_4"> Select your wallet file -or- your private key and unlock your wallet. </li>
         <li translate="HELP_3_Desc_5"> If the wallet is encrypted, a text box will automatically appear. Enter the password. </li>
         <li translate="HELP_3_Desc_6"> Click the "Unlock Wallet" button. </li>
         <li translate="HELP_3_Desc_7"> Your wallet information should show up. Find you account address, next to a colorful, circular icon. This icon visually represents your address. Be certain that the address is the address you have saved to your text document and is on your paper wallet. </li>
-        <li translate="HELP_3_Desc_8"> If you are planning on holding a large amount of ETH, we recommend that send a small amount of ETH from new wallet before depositting a large amount. Send .001 ETH to your new wallet, access that wallet, send that .001 ETH to another address, and ensure everything works smoothly. </li>
+        <li translate="HELP_3_Desc_8"> If you are planning on holding a large amount of kUSD, we recommend that send a small amount of kUSD from new wallet before depositting a large amount. Send .001 kUSD to your new wallet, access that wallet, send that .001 kUSD to another address, and ensure everything works smoothly. </li>
       </ol>
    </div>
   </article>
@@ -153,12 +153,12 @@
   <article class="collapse-container">
     <div ng-click="h4 = !h4">
       <a class="collapse-button" ><span ng-show="!h4">+</span><span ng-show="h4">-</span></a>
-      <h4 translate="HELP_4_Title"> 4. How do I send Ether from one wallet to another? </h4>
+      <h4 translate="HELP_4_Title"> 4. How do I send kUSD from one wallet to another? </h4>
     </div>
     <div ng-show="h4">
       <p translate="HELP_4_Desc_1">If you plan to move a large amount of ether, you should test sending a small amount to your wallet first to ensure everything goes as planned.</p>
       <ol>
-        <li translate="HELP_4_Desc_2"> Navigate to the "Send Ether" page. </li>
+        <li translate="HELP_4_Desc_2"> Navigate to the "Send kUSD" page. </li>
         <li translate="HELP_4_Desc_3"> Select your wallet file -or- your private key and unlock your wallet.</li>
         <li translate="HELP_4_Desc_4"> If the wallet is encrypted, a text box will automatically appear. Enter the password. </li>
         <li translate="HELP_4_Desc_5"> Click the "Unlock Wallet" button. </li>
@@ -180,10 +180,10 @@
   <article class="collapse-container">
     <div ng-click="h4cx = !h4cx">
       <a class="collapse-button" ><span ng-show="!h4cx">+</span><span ng-show="h4cx">-</span></a>
-      <h4 translate="HELP_4CX_Title">4. How do I send Ether using MyEtherWallet CX? </h4>
+      <h4 translate="HELP_4CX_Title">4. How do I send kUSD using MyKowalaWallet CX? </h4>
     </div>
     <div ng-show="h4cx">
-      <p translate="HELP_4CX_Desc_1">First, you need to add a wallet. Once you have done that, you have 2 options: the "QuickSend" functionality from the Chrome Extension icon or the "Send Ether" page.</p>
+      <p translate="HELP_4CX_Desc_1">First, you need to add a wallet. Once you have done that, you have 2 options: the "QuickSend" functionality from the Chrome Extension icon or the "Send kUSD" page.</p>
       <p translate="HELP_4CX_Desc_2" class="strong"> QuickSend: </p>
       <ol>
         <li translate="HELP_4CX_Desc_3"> Click the Chrome Extension Icon. </li>
@@ -196,9 +196,9 @@
         <li translate="HELP_4CX_Desc_10"> Enter the password for that wallet. </li>
         <li translate="HELP_4CX_Desc_11"> Click "Send Transaction." </li>
       </ol>
-      <p class="strong" translate="HELP_4CX_Desc_12"> Using "Send Ether" Page: </p>
+      <p class="strong" translate="HELP_4CX_Desc_12"> Using "Send kUSD" Page: </p>
       <ol>
-        <li translate="HELP_4_Desc_2"> Navigate to the "Send Ether" page. </li>
+        <li translate="HELP_4_Desc_2"> Navigate to the "Send kUSD" page. </li>
         <li translate="HELP_4_Desc_3"> Select your wallet file -or- your private key and unlock your wallet.</li>
         <li translate="HELP_4_Desc_4"> If the wallet is encrypted, a text box will automatically appear. Enter the password. </li>
         <li translate="HELP_4_Desc_5"> Click the "Unlock Wallet" button. </li>
@@ -220,19 +220,19 @@
   <article class="collapse-container">
     <div  ng-click="h5 = !h5">
       <a class="collapse-button"><span ng-show="!h5">+</span><span ng-show="h5">-</span></a>
-      <h4 translate="HELP_5_Title">5. How do I run MyEtherWallet.com offline/locally? </h4>
+      <h4 translate="HELP_5_Title">5. How do I run testnet-wallet.kowala.io offline/locally? </h4>
     </div>
     <div ng-show="h5">
-    <p translate="HELP_5_Desc_1"> You can run MyEtherWallet.com on your computer instead of from the GitHub servers. You can generatea a wallet completely offline and send transactions from the "Offline Transaction" page. </p>
+    <p translate="HELP_5_Desc_1"> You can run testnet-wallet.kowala.io on your computer instead of from the GitHub servers. You can generatea a wallet completely offline and send transactions from the "Offline Transaction" page. </p>
     <ol>
       <li translate="HELP_2b_Desc_1">Go to https://github.com/kvhnuke/etherwallet/releases/latest:</li>
       <li translate="HELP_2b_Desc_2">Click the file below that looks like dist-vX.X.X.zip</li>
       <li translate="HELP_2b_Desc_3">Move zip to an airgapped computer.</li>
       <li translate="HELP_2b_Desc_4">Unzip it and double-click `index.html`.</li>
-      <li translate="HELP_5_Desc_7">MyEtherWallet.com is now running entirely on your computer.</li>
+      <li translate="HELP_5_Desc_7">testnet-wallet.kowala.io is now running entirely on your computer.</li>
     </ol>
-    <p translate="HELP_5_Desc_8"> In case you are not familiar, you need to keep the entire folder in order to run the website, not just index.html. Don't touch or move anything around in the folder. If you are storing a backup of the MyEtherWallet repo for the future, we recommend just storing the ZIP so you can be sure the folder contents stay intact.</p>
-    <p translate="HELP_5_Desc_9"> As we are constantly updating MyEtherWallet.com, we recommend you periodically update your saved version of the repo. </p>
+    <p translate="HELP_5_Desc_8"> In case you are not familiar, you need to keep the entire folder in order to run the website, not just index.html. Don't touch or move anything around in the folder. If you are storing a backup of the MyKowalaWallet repo for the future, we recommend just storing the ZIP so you can be sure the folder contents stay intact.</p>
+    <p translate="HELP_5_Desc_9"> As we are constantly updating testnet-wallet.kowala.io, we recommend you periodically update your saved version of the repo. </p>
     </div>
   </article>
 }
@@ -269,7 +269,7 @@
       <ul>
         <li> Verify the URL you entered is correct. </li>
         <li> Verify the port you entered is correct. </li>
-        <li> Verify that if you are connecting to an http:// node you are running MyEtherWallet locally (NOT over https://). </li>
+        <li> Verify that if you are connecting to an http:// node you are running MyKowalaWallet locally (NOT over https://). </li>
         <li> Verify geth is running with <code>geth --rpc --rpccorsdomain "null" --keystore "dont_put_secret_files_here_ever"</code> or parity is running with <code>parity --rpccorsdomain "*" --keys-path "dont_put_secret_files_here_ever"</code> </li>
         <li> Verify your node is actually up and running. </li>
         <li> Try removing the node and adding it again. </li>
@@ -316,10 +316,10 @@
       <h4 translate="HELP_8_Title">8. What happens if your site goes down? </h4>
     </div>
     <div ng-show="h8">
-      <p translate="HELP_8_Desc_1">MyEtherWallet is not a web wallet. You don't have a login and nothing ever gets saved to our servers. It is simply an interface that allows you interact with the blockchain.</p>
-      <p translate="HELP_8_Desc_2">If MyEtherWallet.com goes down, you would have to find another way (like geth or Ethereum Wallet / Mist) to do what we are doing. But you wouldn't have to "get" your Ether out of MyEtherWallet because it's not in MyEtherWallet. It's in whatever wallet your generated via our site.</p>
+      <p translate="HELP_8_Desc_1">MyKowalaWallet is not a web wallet. You don't have a login and nothing ever gets saved to our servers. It is simply an interface that allows you interact with the blockchain.</p>
+      <p translate="HELP_8_Desc_2">If testnet-wallet.kowala.io goes down, you would have to find another way (like geth or Ethereum Wallet / Mist) to do what we are doing. But you wouldn't have to "get" your kUSD out of MyKowalaWallet because it's not in MyKowalaWallet. It's in whatever wallet your generated via our site.</p>
       <p translate="HELP_8_Desc_3"> You can import your unencrypted private key and your Geth/Mist Format (encrypted) files directly into geth / Ethereum Wallet / Mist very easily now. See question #10 below. </p>
-      <p translate="HELP_8_Desc_4">In addition, the likelihood of us taking MyEtherWallet down is slim to none. It costs us almost nothing to maintain as we aren't storing any information. If we do take the domain down, it still is, and always will be, publicly available at <a href="https://github.com/kvhnuke/etherwallet/tree/gh-pages" target="_blank" rel="noopener noreferrer">https://github.com/kvhnuke/etherwallet</a>. You can download the ZIP there and run it locally. </p>
+      <p translate="HELP_8_Desc_4">In addition, the likelihood of us taking MyKowalaWallet down is slim to none. It costs us almost nothing to maintain as we aren't storing any information. If we do take the domain down, it still is, and always will be, publicly available at <a href="https://github.com/kvhnuke/etherwallet/tree/gh-pages" target="_blank" rel="noopener noreferrer">https://github.com/kvhnuke/etherwallet</a>. You can download the ZIP there and run it locally. </p>
     </div>
   </article>
 }
@@ -330,12 +330,12 @@
   <article class="collapse-container">
     <div  ng-click="h8cx = !h8cx">
       <a class="collapse-button"><span ng-show="!h8cx">+</span><span ng-show="h8cx">-</span></a>
-      <h4 translate="HELP_8CX_Title">8. What happens if MyEtherWallet CX disappears? </h4>
+      <h4 translate="HELP_8CX_Title">8. What happens if MyKowalaWallet CX disappears? </h4>
     </div>
     <div ng-show="h8cx">
       <p translate="HELP_8CX_Desc_1">First, all data is saved on your computer, not our servers. I know it can be confusing, but when you look at the Chrome Extension, you are NOT looking at stuff saved on our servers somewhere - it's all saved on your own computer.</p>
-      <p translate="HELP_8CX_Desc_2"> That said, it is **very important** that you back up all your information for any new wallets generated with MyEtherWallet CX. That way if anything happens to MyEtherWallet CX or your computer, you still have all the information necessary to access your Ether. See the #2a for how to back up your wallets.</p>
-      <p translate="HELP_8CX_Desc_3"> If for some reason MyEtherWallet CX disappears from the Chrome Store, you can find the source on Github and load it manually. See #5 above.</p>
+      <p translate="HELP_8CX_Desc_2"> That said, it is **very important** that you back up all your information for any new wallets generated with MyKowalaWallet CX. That way if anything happens to MyKowalaWallet CX or your computer, you still have all the information necessary to access your kUSD. See the #2a for how to back up your wallets.</p>
+      <p translate="HELP_8CX_Desc_3"> If for some reason MyKowalaWallet CX disappears from the Chrome Store, you can find the source on Github and load it manually. See #5 above.</p>
     </div>
   </article>
 }
@@ -372,7 +372,7 @@
         <li translate="HELP_10_Desc_8"> Select your wallet file -or- your private key and unlock your wallet.</li>
         <li translate="HELP_10_Desc_9"> Press the "GENERATE SIGNED TRANSACTION" button.</li>
         <li translate="HELP_10_Desc_10"> The data field below this button will populate with your signed transaction. Copy this and move it back to your online computer. </li>
-        <li translate="HELP_10_Desc_11"> On your online computer, paste the signed transaction into the text field in step #3 and click "SEND Ether". This will broadcast your transaction.</li>
+        <li translate="HELP_10_Desc_11"> On your online computer, paste the signed transaction into the text field in step #3 and click "SEND kUSD". This will broadcast your transaction.</li>
       </ol>
     </div>
   </article>
@@ -382,10 +382,10 @@
   <article class="collapse-container">
     <div ng-click="h12 = !h12">
       <a class="collapse-button" ><span ng-show="!h12">+</span><span ng-show="h12">-</span></a>
-      <h4 translate="HELP_12_Title">12. How do I import a wallet created with MyEtherWallet into geth / Ethereum Wallet / Mist?</h4>
+      <h4 translate="HELP_12_Title">12. How do I import a wallet created with MyKowalaWallet into geth / Ethereum Wallet / Mist?</h4>
     </div>
     <div ng-show="h12">
-      <p class="strong" translate="HELP_12_Desc_1"> Using an Geth/Mist JSON file from MyEtherWallet v2+....</p>
+      <p class="strong" translate="HELP_12_Desc_1"> Using an Geth/Mist JSON file from MyKowalaWallet v2+....</p>
       <ol>
         @@if (site === 'mew' ) {
           <li translate="HELP_12_Desc_2"> Go to the "View Wallet Info" page.</li>
@@ -438,7 +438,7 @@
         <h4 translate="HELP_13_Title">13. What does "Gas Limit Too Low" Mean?</h4>
       </div>
       <div ng-show="h13">
-        <p translate="HELP_13_Desc_1"> Most likely, this means you are attempting to send Ether to a contract. Sending to a contract requires a bit more data and therefore a bit more gas. On the "Send Ether" page, click the "+ Advanced: Add More Gas or Data" button below the amount field. This will display two additional fields that you can use to increase the gas above the default 21000, or add data to your transaction. </p>
+        <p translate="HELP_13_Desc_1"> Most likely, this means you are attempting to send kUSD to a contract. Sending to a contract requires a bit more data and therefore a bit more gas. On the "Send kUSD" page, click the "+ Advanced: Add More Gas or Data" button below the amount field. This will display two additional fields that you can use to increase the gas above the default 21000, or add data to your transaction. </p>
       </div>
   </article>
 
@@ -447,10 +447,10 @@
   <article class="collapse-container">
     <div ng-click="h14 = !h14" >
       <a class="collapse-button"><span ng-show="!h14">+</span><span ng-show="h14">-</span></a>
-        <h4 translate="HELP_14_Title"> 14. Some sites randomize (seed) the private key generation via mouse movements. MyEtherWallet.com doesn't do this. Is the random number generation for MyEtherWallet safe?</h4>
+        <h4 translate="HELP_14_Title"> 14. Some sites randomize (seed) the private key generation via mouse movements. testnet-wallet.kowala.io doesn't do this. Is the random number generation for MyKowalaWallet safe?</h4>
       </div>
       <div ng-show="h14">
-        <p translate="HELP_14_Desc_1">While the mouse moving thing is clever and we understand why people like it, the reality is window.crypto ensures more entropy than your mouse movements. The mouse movements aren't unsafe, it's just that we (and tons of other crypto experments) believe in window.crypto. In addition, MyEtherWallet.com can be used on touch devices. Here's a <a href="https://www.reddit.com/r/ethereum/comments/2bilqg/note_there_is_a_paranoid_highsecurity_way_to/cj5sgrm" target="_blank" rel="noopener noreferrer">conversation between an angry redditor and Vitalik Buterin regarding mouse movements v. window.crypto</a> and here is the <a href="https://dvcs.w3.org/hg/webcrypto-api/raw-file/tip/spec/Overview.html#dfn-GlobalCrypto" target="_blank" rel="noopener noreferrer">the window.crypto w3 spec</a>.</p>
+        <p translate="HELP_14_Desc_1">While the mouse moving thing is clever and we understand why people like it, the reality is window.crypto ensures more entropy than your mouse movements. The mouse movements aren't unsafe, it's just that we (and tons of other crypto experments) believe in window.crypto. In addition, testnet-wallet.kowala.io can be used on touch devices. Here's a <a href="https://www.reddit.com/r/ethereum/comments/2bilqg/note_there_is_a_paranoid_highsecurity_way_to/cj5sgrm" target="_blank" rel="noopener noreferrer">conversation between an angry redditor and Vitalik Buterin regarding mouse movements v. window.crypto</a> and here is the <a href="https://dvcs.w3.org/hg/webcrypto-api/raw-file/tip/spec/Overview.html#dfn-GlobalCrypto" target="_blank" rel="noopener noreferrer">the window.crypto w3 spec</a>.</p>
     </div>
   </article>
 
@@ -462,7 +462,7 @@
         <h4 translate="HELP_15_Title">15. Why hasn't the wallet I just created show up in the blockchain explorer? (ie: etherchain, etherscan) </h4>
       </div>
       <div ng-show="h15">
-        <p translate="HELP_15_Desc_1"> Addresses will only show up in a blockchain explorer once the account has activity on it&mdash;for example, once you have transferred some Ether to it. </p>
+        <p translate="HELP_15_Desc_1"> Addresses will only show up in a blockchain explorer once the account has activity on it&mdash;for example, once you have transferred some kUSD to it. </p>
     </div>
   </article>
 
@@ -540,8 +540,8 @@
     <div ng-show="h21">
       <p translate="HELP_21_Desc_1"> Short version: yes, but finding an account with a balance would take longer than the universe...so...no.</p>
       <p translate="HELP_21_Desc_2"> Long ELI5 Version: So Ethereum is based on <a href="https://en.wikipedia.org/wiki/Public-key_cryptography" target="_blank" rel="noopener noreferrer">Public Key Cryptography</a>, specifically <a href="https://eprint.iacr.org/2013/734.pdf" target="_blank" rel="noopener noreferrer"> Elliptic curve cryptography </a> which is very widely used, not just in Ethereum. Most servers are protected via ECC. Bitcoin uses the same, as well as SSH and TLS and a lot of other stuff. The Ethereum keys specifically are 256-bit keys, which are stronger than 128-bit and 192-bit, which are also widely used and still considered secure by experts.</p>
-      <p translate="HELP_21_Desc_3">In this you have a private key and a public key. The private key can derive the public key, but the public key cannot be turned back into the private key. The fact that the internet and the world’s secrets are using this cryptography means that if there is a way to go from public key to private key, your lost ETH is the least of everyone’s problems.</p>
-      <p translate="HELP_21_Desc_4">Now, that said, YES if someone else has your private key then they can indeed send ETH from your account. Just like if someone has your password to your email, they can read and send your email, or the password to your bank account, they could make transfers. You could download the Keystore version of your private key which is the private key that is encrypted with a password. This is like having a password that is also protected by another password.</p>
+      <p translate="HELP_21_Desc_3">In this you have a private key and a public key. The private key can derive the public key, but the public key cannot be turned back into the private key. The fact that the internet and the world’s secrets are using this cryptography means that if there is a way to go from public key to private key, your lost kUSD is the least of everyone’s problems.</p>
+      <p translate="HELP_21_Desc_4">Now, that said, YES if someone else has your private key then they can indeed send kUSD from your account. Just like if someone has your password to your email, they can read and send your email, or the password to your bank account, they could make transfers. You could download the Keystore version of your private key which is the private key that is encrypted with a password. This is like having a password that is also protected by another password.</p>
       <p translate="HELP_21_Desc_5">And YES, in theory you could just type in a string of 64 hexadecimal characters until you got one that matched. In fact, smart people could write a program to very quickly check random private keys. This is known as "brute-forcing" or "mining" private keys. People have thought about this long and hard. With a few very high end servers, they may be able to check 1M+ keys / second. However, even checking that many per second would not yield access to make the cost of running those servers even close to worthwhile - it is more likely you, and your great-grandchildren, will die before getting a match.</p>
       <p translate="HELP_21_Desc_6">If you know anything about Bitcoin, <a href="http://bitcoin.stackexchange.com/questions/32331/two-people-with-same-public-address-how-will-people-network-know-how-to-deliver" target="_blank" rel="noopener noreferrer">this will put it in perspective:</a> *To illustrate how unlikely this is: suppose every satoshi of every bitcoin ever to be generated was sent to its own unique private keys. The probability that among those keys there could be two that would correspond to the same address is roughly one in 100 quintillion.*</p>
       <p translate="HELP_21_Desc_7"><a href="http://security.stackexchange.com/questions/25375/why-not-use-larger-cipher-keys/25392#25392" target="_blank" rel="noopener noreferrer">If you want something a bit more technical:</a> *These numbers have nothing to do with the technology of the devices; they are the maximums that thermodynamics will allow. And they strongly imply that brute-force attacks against 256-bit keys will be infeasible until computers are built from something other than matter and occupy something other than space.*</p>
@@ -556,7 +556,7 @@
   <article class="collapse-container">
     <div ng-click="hSecCX = !hSecCX">
       <a class="collapse-button" ><span ng-show="!hSecCX">+</span><span ng-show="hSecCX">-</span></a>
-      <h4 translate="HELP_SecCX_Title">Security - MyEtherWallet CX </h4>
+      <h4 translate="HELP_SecCX_Title">Security - MyKowalaWallet CX </h4>
     </div>
     <div ng-show="hSecCX">
       <h6 translate="HELP_SecCX_Desc_1"> Where is this extension saving my information?</h6>
@@ -565,7 +565,7 @@
       <h6 translate="HELP_SecCX_Desc_3"> What information is saved? </h6>
       <p translate="HELP_SecCX_Desc_4"> The address, nickname, private key is stored in chrome.storage. The private key is encrypted using the password you set when you added the wallet. The nickname and wallet address is not encrypted. </p>
       <h6 translate="HELP_SecCX_Desc_5"> Why aren't the nickname and wallet address encrypted? </h6>
-      <p translate="HELP_SecCX_Desc_6"> If we were to encrypt these items, you would need to enter a password each time you wanted to view your account balance or view the nicknames. If this concerns you, we recommend you use MyEtherWallet.com instead of this Chrome Extension. </p>
+      <p translate="HELP_SecCX_Desc_6"> If we were to encrypt these items, you would need to enter a password each time you wanted to view your account balance or view the nicknames. If this concerns you, we recommend you use testnet-wallet.kowala.io instead of this Chrome Extension. </p>
     </div>
   </article>
 }
@@ -582,7 +582,7 @@
       <ul>
         <li translate="HELP_Sec_Desc_2">We've been up and running since August 2015. If you search for <a href="https://www.reddit.com/search?q=myetherwallet" target="_blank" rel="noopener noreferrer" />"myetherwallet" on reddit</a>, you can see numerous people who use us with great success.</li>
         <li translate="HELP_Sec_Desc_3">We aren't going to take your money or steal your private key(s). There is no malicious code on this site. In fact the "GENERATE WALLET" pages are completely client-side. That means that all the code is executed on ** your computer** and it is never saved and transmitted anywhere.</li>
-        <li translate="HELP_Sec_Desc_4"> Check the URL -- This site is being served through GitHub and you can see the source code here: <a href="https://github.com/kvhnuke/etherwallet/tree/gh-pages" target="_blank" rel="noopener noreferrer">https://github.com/kvhnuke/etherwallet/tree/gh-pages</a> to the domains: <a href="http://kvhnuke.github.io/etherwallet/" target="_blank" rel="noopener noreferrer">http://kvhnuke.github.io/etherwallet/</a> and <a href="https://www.myetherwallet.com" target="_blank" rel="noopener noreferrer">https://www.myetherwallet.com</a>. You can verify it's hosted at GitHub by using <a href="http://viewdns.info/dnsrecord/?domain=myetherwallet.com" target="_blank" rel="noopener noreferrer">http://viewdns.info/dnsrecord/?domain=myetherwallet.com</a> - last two A record IPs are owned by GitHub for their custom domain hosting.</li>
+        <li translate="HELP_Sec_Desc_4"> Check the URL -- This site is being served through GitHub and you can see the source code here: <a href="https://github.com/kvhnuke/etherwallet/tree/gh-pages" target="_blank" rel="noopener noreferrer">https://github.com/kvhnuke/etherwallet/tree/gh-pages</a> to the domains: <a href="http://kvhnuke.github.io/etherwallet/" target="_blank" rel="noopener noreferrer">http://kvhnuke.github.io/etherwallet/</a> and <a href="https://testnet-wallet.kowala.io" target="_blank" rel="noopener noreferrer">https://testnet-wallet.kowala.io</a>. You can verify it's hosted at GitHub by using <a href="http://viewdns.info/dnsrecord/?domain=myetherwallet.com" target="_blank" rel="noopener noreferrer">http://viewdns.info/dnsrecord/?domain=myetherwallet.com</a> - last two A record IPs are owned by GitHub for their custom domain hosting.</li>
         <li translate="HELP_Sec_Desc_5"> For generating wallets, you can download the <a href="https://github.com/kvhnuke/etherwallet/tree/gh-pages">source code</a>. See #5 above.</li>
         <li translate="HELP_Sec_Desc_6"> Do a test run and check and see what network activity is happening. The easiest way for you to do this is to right click on the page and click "inspect element". Go to the "Network" tab. Generate a test wallet. You will see there is no network activity. You may see something happening that looks like data:image/gif and data:image/png. Those are the QR codes being generated...on your computer...by your computer. No bytes were transferred.</li>
         <li translate="HELP_Sec_Desc_8"> If you do not feel comfortable using this tool, then by all means, do not use it. We created this tool as a helpful way for people to generate wallets and make transactions without needing to dive into command line or run a full node. Again, feel free to reach out if you have concerns and we will respond as quickly as possible. Thanks! </li>

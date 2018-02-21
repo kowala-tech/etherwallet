@@ -1315,7 +1315,7 @@
     "type": "default"
 }, {
     "address": "0x3f4b726668da46f5e0e75aa5d478acec9f38210f",
-    "symbol": "M-ETH",
+    "symbol": "M-kUSD",
     "decimal": 18,
     "type": "default"
 }, {
@@ -1860,7 +1860,7 @@
     "type": "default"
 }, {
     "address": "0x3eb91d237e491e0dee8582c402d85cb440fb6b54",
-    "symbol": "S-ETH",
+    "symbol": "S-kUSD",
     "decimal": 18,
     "type": "default"
 }, {

@@ -36,7 +36,7 @@ var addWalletCtrl = function($scope, $sce) {
     $scope.$watch('walletType', function() {
         if ($scope.walletType == "ledger") {
             switch ($scope.nodeType) {
-                case nodes.nodeTypes.ETH:
+                case nodes.nodeTypes.kUSD:
                     $scope.HDWallet.dPath = $scope.HDWallet.ledgerPath;
                     break;
                 case nodes.nodeTypes.ETC:
@@ -50,7 +50,7 @@ var addWalletCtrl = function($scope, $sce) {
             }
         } else if ($scope.walletType == "trezor") {
             switch ($scope.nodeType) {
-                case nodes.nodeTypes.ETH:
+                case nodes.nodeTypes.kUSD:
                     $scope.HDWallet.dPath = $scope.HDWallet.trezorPath;
                     break;
                 case nodes.nodeTypes.ETC:
@@ -140,7 +140,7 @@ var addWalletCtrl = function($scope, $sce) {
         $scope.addWalletStats = "";
         try {
             if ($scope.walletType == "pasteprivkey" && $scope.requirePPass) {
-                $scope.wallet = Wallet.fromMyEtherWalletKey($scope.manualprivkey, $scope.privPassword);
+                $scope.wallet = Wallet.fromMyKowalaWalletKey($scope.manualprivkey, $scope.privPassword);
                 $scope.addAccount.password = $scope.privPassword;
             } else if ($scope.walletType == "pasteprivkey" && !$scope.requirePPass) {
                 $scope.wallet = new Wallet($scope.manualprivkey);
