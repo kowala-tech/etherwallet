@@ -37,7 +37,7 @@ nodes.nodeList = {
         'name': 'kUSD',
         'type': nodes.nodeTypes.kUSD,
         'eip155': true,
-        'chainId': 234589643825,
+        'chainId': 519374298533,
         'tokenList': [],
         'service': 'testnet.kowalatech.io',
         'lib': new nodes.customNode('http://rpcnode.testnet.kowala.io', '30503')
