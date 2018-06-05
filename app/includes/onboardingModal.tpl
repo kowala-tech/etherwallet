@@ -2,7 +2,9 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body">
-
+        <div class="on-boarding-close">
+          <img class="editor-icons" src="images/icon-x.svg" title="Close" ng-click="onboardModal.close()"/>
+        </div>
         <article class="onboarding__msg" ng-show="onboardMsg" translate="ONBOARD_resume">
           It looks like you didn't finish reading through these slides last time. ProTip: Finish reading through the slides 😉
         </article>
@@ -326,7 +328,7 @@
                   Always check the URL: `https://www.myetherwallet.com`.
                 </li>
                 <li translate="ONBOARD_secure_1_content__4">
-                  Always make sure the URL bar has `MYETHERWALLET LLC` in green.
+                  Always make sure the URL bar has `MYETHERWALLET Inc` in green.
                 </li>
                 <li translate="ONBOARD_secure_1_content__5">
                   Do not trust messages or links sent to you randomly via email, Slack, Reddit, Twitter, etc.
@@ -518,6 +520,14 @@
                   </a>
                 </li>
               </ul>
+
+              <div class="onboarding__buttons">
+                <a ng-click="onboardModal.close()" class="btn btn-primary col-sm-5 col-sm-offset-7">
+                  <span>
+                    Done &nbsp;
+                  </span>
+                </a>
+              </div>
             </div>
           </section>
         </article>

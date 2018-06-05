@@ -47,7 +47,7 @@
     <!-- TREZOR -->
     <label class="radio"
            aria-flowto="aria4"
-           ng-show="ajaxReq.type=='ETH'||ajaxReq.type=='ETC'||ajaxReq.type=='ROPSTEN ETH'||ajaxReq.type=='RINKEBY ETH'||ajaxReq.type=='KOVAN ETH'||ajaxReq.type=='EXP'||ajaxReq.type=='UBQ'||ajaxReq.type=='RSK'||ajaxReq.type=='POA'||ajaxReq.type=='TOMO'||ajaxReq.type=='ELLA'">
+           ng-show="ajaxReq.type=='ETH'||ajaxReq.type=='ETC'||ajaxReq.type=='ROPSTEN ETH'||ajaxReq.type=='RINKEBY ETH'||ajaxReq.type=='KOVAN ETH'||ajaxReq.type=='EXP'||ajaxReq.type=='UBQ'||ajaxReq.type=='RSK'||ajaxReq.type=='POA'||ajaxReq.type=='TOMO'||ajaxReq.type=='ELLA'||ajaxReq.type=='EGEM'||ajaxReq.type=='CLO'||ajaxReq.type=='ETSC'||ajaxReq.type=='MUSIC'||ajaxReq.type=='YAP'">
       <input aria-flowto="aria4"
              type="radio"
              aria-label="Trezor Hardware Wallet"
@@ -68,6 +68,17 @@
       Digital Bitbox
     </label>
 
+    <!-- Secalot -->
+    <label aria-flowto="aria5"
+           class="radio"
+           ng-show="ajaxReq.type=='ETH'||ajaxReq.type=='ETC'||ajaxReq.type=='ROPSTEN ETH'||ajaxReq.type=='RINKEBY ETH'||ajaxReq.type=='KOVAN ETH'||ajaxReq.type=='EXP'">
+      <input aria-flowto="aria5"
+             type="radio"
+             aria-label="Secalot hardware wallet"
+             ng-model="walletType"
+             value="secalot"/>
+      Secalot
+    </label>
 
     <!-- Keystore / JSON File -->
     <label aria-flowto="aria6"
@@ -429,6 +440,51 @@
     <!-- / Digital Bitbox-->
 
 
+    <!--  Secalot-->
+    <div id="selectedTypeSecalot" ng-if="walletType=='secalot'">
+      <h4>
+        Secalot Hardware Wallet
+      </h4>
+      <h5>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 79.536 79.536"><path fill="#5dba5a" d="M39.769 0C17.8 0 0 17.8 0 39.768c0 21.965 17.8 39.768 39.769 39.768 21.965 0 39.768-17.803 39.768-39.768C79.536 17.8 61.733 0 39.769 0zm-5.627 58.513L15.397 39.768l7.498-7.498 11.247 11.247 22.497-22.493 7.498 7.498-29.995 29.991z"/></svg>
+        This is a recommended way to access your wallet.
+      </h5>
+      <div class="form-group">
+        A hardware wallet is a small USB device that allows you to access your wallet quickly, safely &amp; easily. It is more secure because your private key <u>never leaves the hardware wallet</u>. It protects you from phishing, malware, and more.
+      </div>
+      <ul>
+        <li class="u__protip">
+          <a href="https://www.secalot.com/documentation/ethereum-wallet/"
+             target="_blank"
+             rel="noopener noreferrer">
+               How to use Secalot with MyEtherWallet
+          </a>
+        </li>
+        <li class="u__protip">
+          <a href="https://secalot.com/?ref=mew"
+             target="_blank"
+             rel="noopener noreferrer">
+                Don't have a Secalot? Get one now.
+          </a>
+        </li>
+      </ul>
+      <input class="form-control"
+             aria-label="Enter your Secalot Ethereum wallet PIN-code"
+             aria-describedby="selectedTypeSecalot"
+             type="password"
+             placeholder="Secalot Ethereum wallet PIN-code"
+             spellcheck="false"
+             value=""
+             ng-model="HDWallet.secalotSecret" />
+      <div class="form-group">
+        <a tabindex="0" role="button" class="btn btn-primary" ng-click="scanSecalot()" translate="ADD_Secalot_scan">
+          Connect your Secalot
+        </a>
+      </div>
+    </div>
+    <!-- / Secalot-->
+
+
     <!-- Keystore -->
     <div ng-if="walletType=='fileupload'">
       <h4 translate="ADD_Radio_2_alt">Select your wallet file</h4>
@@ -468,7 +524,7 @@
         </li>
       </ul>
       <div class="form-group">
-        If you must, please <u>double-check the URL &amp; SSL cert</u>. It should say <code>https://www.myetherwallet.com</code> &amp; <code>MYETHERWALLET LLC</code> in your URL bar.
+        If you must, please <u>double-check the URL &amp; SSL cert</u>. It should say <code>https://www.myetherwallet.com</code> &amp; <code>MYETHERWALLET INC</code> in your URL bar.
       </div>
       <br />
       <div class="form-group">
@@ -544,7 +600,7 @@
         </li>
       </ul>
       <div class="form-group">
-        If you must, please <u>double-check the URL &amp; SSL cert</u>. It should say <code>https://www.myetherwallet.com</code> &amp; <code>MYETHERWALLET LLC</code> in your URL bar.
+        If you must, please <u>double-check the URL &amp; SSL cert</u>. It should say <code>https://www.myetherwallet.com</code> &amp; <code>MYETHERWALLET INC</code> in your URL bar.
       </div>
       <br />
       <div class="form-group">
@@ -594,7 +650,7 @@
         This is <u>not</u> a recommended way to access your wallet.
       </h5>
       <div class="form-group">
-        Entering your private key on a website dangerous. If our website is compromised or you accidentally visit a different website, your funds will be stolen. Please consider:
+        Entering your private key on a website is dangerous. If our website is compromised or you accidentally visit a different website, your funds will be stolen. Please consider:
       </div>
       <ul>
         <li>
@@ -625,7 +681,7 @@
         </li>
       </ul>
       <div class="form-group">
-        If you must, please <u>double-check the URL &amp; SSL cert</u>. It should say <code>https://www.myetherwallet.com</code> &amp; <code>MYETHERWALLET LLC</code> in your URL bar.
+        If you must, please <u>double-check the URL &amp; SSL cert</u>. It should say <code>https://www.myetherwallet.com</code> &amp; <code>MYETHERWALLET INC</code> in your URL bar.
       </div>
       <br />
       <div class="form-group">
@@ -713,7 +769,7 @@
           </h4>
 
           <p class="alert alert-danger"
-             ng-hide="ajaxReq.type=='ETH'||ajaxReq.type=='ETC'||ajaxReq.type=='ROPSTEN ETH'||ajaxReq.type=='RINKEBY ETH'||ajaxReq.type=='KOVAN ETH'||ajaxReq.type=='EXP'||ajaxReq.type=='UBQ'||ajaxReq.type=='ELLA'">
+             ng-hide="ajaxReq.type=='ETH'||ajaxReq.type=='ETC'||ajaxReq.type=='ROPSTEN ETH'||ajaxReq.type=='RINKEBY ETH'||ajaxReq.type=='KOVAN ETH'||ajaxReq.type=='EXP'||ajaxReq.type=='UBQ'||ajaxReq.type=='ELLA'||ajaxReq.type=='EGEM'||ajaxReq.type=='CLO'||ajaxReq.type=='ETSC'||ajaxReq.type=='MUSIC'||ajaxReq.type=='YAP'">
                 We do not know the correct path for this network.
                 <a href="https://github.com/kvhnuke/etherwallet/issues"
                    target="_blank"
@@ -751,7 +807,9 @@
                   Ledger (ETH)
                 </p>
               </label>
+            </div>
 
+            <div class="col-sm-4">
               <label class="radio small">
                 <input aria-describedby="Path: Ledger (ETC) {{HDWallet.ledgerClassicPath}}"
                        ng-change="onHDDPathChange()"
@@ -793,9 +851,6 @@
               </label>
             </div>
 
-          </section>
-
-          <section class="row">
             <div class="col-sm-4">
               <label class="radio small">
                 <input aria-describedby="Path: TREZOR - TESTNET - {{HDWallet.trezorTestnetPath}}"
@@ -851,9 +906,77 @@
                 </p>
               </label>
             </div>
-          </section>
 
-          <section class="row">
+            <div class="col-sm-4">
+              <label class="radio small">
+                <input aria-describedby="Path: TREZOR (EGEM) {{HDWallet.hwEtherGemPath}}"
+                       ng-change="onHDDPathChange()"
+                       ng-model="HDWallet.dPath"
+                       type="radio"
+                      value="{{HDWallet.hwEtherGemPath}}"/>
+                <span ng-bind="HDWallet.hwEtherGemPath"></span>
+                <p class="small">
+                  Network: EtherGem
+                </p>
+              </label>
+            </div>
+
+            <div class="col-sm-4">
+              <label class="radio small">
+                <input aria-describedby="Path: TREZOR (CLO) {{HDWallet.hwCallistoPath}}"
+                       ng-change="onHDDPathChange()"
+                       ng-model="HDWallet.dPath"
+                       type="radio"
+                      value="{{HDWallet.hwCallistoPath}}"/>
+                <span ng-bind="HDWallet.hwCallistoPath"></span>
+                <p class="small">
+                  Network: Callisto
+                </p>
+              </label>
+            </div>
+
+            <div class="col-sm-4">
+              <label class="radio small">
+                <input aria-describedby="Path: TREZOR (ETSC) {{HDWallet.hwSocialPath}}"
+                       ng-change="onHDDPathChange()"
+                       ng-model="HDWallet.dPath"
+                       type="radio"
+                      value="{{HDWallet.hwSocialPath}}"/>
+                <span ng-bind="HDWallet.hwSocialPath"></span>
+                <p class="small">
+                  Network: Ethereum Social
+                </p>
+              </label>
+            </div>
+
+            <div class="col-sm-4">
+              <label class="radio small">
+                <input aria-describedby="Path: TREZOR (MUSIC) {{HDWallet.hwMusicoinPath}}"
+                       ng-change="onHDDPathChange()"
+                       ng-model="HDWallet.dPath"
+                       type="radio"
+                      value="{{HDWallet.hwMusicoinPath}}"/>
+                <span ng-bind="HDWallet.hwMusicoinPath"></span>
+                <p class="small">
+                  Network: Musicoin
+                </p>
+              </label>
+            </div>
+
+            <div class="col-sm-4">
+              <label class="radio small">
+                <input aria-describedby="Path: TREZOR (YAP) {{HDWallet.hwYapstonePath}}"
+                       ng-change="onHDDPathChange()"
+                       ng-model="HDWallet.dPath"
+                       type="radio"
+                      value="{{HDWallet.hwYapstonePath}}"/>
+                <span ng-bind="HDWallet.hwYapstonePath"></span>
+                <p class="small">
+                  Network: Yapstone
+                </p>
+              </label>
+            </div>
+
             <div class="col-sm-4">
               <label class="radio small">
                 <p class="small"><strong>
