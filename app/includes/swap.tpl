@@ -27,7 +27,7 @@
         </p>
         <textarea class="form-control input-sm" rows="9" ng-show="swapIssue" style="max-width: 35rem;margin: auto;">
             To: mew@bity.com, support@myetherwallet.com
-            Subject: {{orderResult.reference}} - Issue regarding my Swap via MEW
+            Subject: {{orderResult.reference}} - Issue regarding my Swap via KWT
             Message:
             REF ID#: {{orderResult.reference}}
             Amount to send: {{orderResult.input.amount}} {{orderResult.input.currency}}
@@ -47,7 +47,7 @@
         </p>
         <textarea class="form-control input-sm" rows="9" ng-show="swapIssue" style="max-width: 35rem;margin: auto;">
             To: support@myetherwallet.com, support@kyber.network
-            Subject: Issue regarding my Kyber Swap via MEW - {{kyberTransaction.ethTxHash ? kyberTransaction.ethTxHash : kyberTransaction.tokenTxHash}}
+            Subject: Issue regarding my Kyber Swap via KWT - {{kyberTransaction.ethTxHash ? kyberTransaction.ethTxHash : kyberTransaction.tokenTxHash}}
             Message:
             TxHash(s): {{kyberTransaction.ethTxHash ? kyberTransaction.ethTxHash : kyberTransaction.tokenTxHash + " ApproveTxHash: " + kyberTransaction.tokenApproveTxHash}}
             Amount to send: {{swapOrder.fromVal}} {{swapOrder.fromCoin}}

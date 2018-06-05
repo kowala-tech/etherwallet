@@ -107,7 +107,7 @@
            target="_blank"
            rel="noopener noreferrer"
            translate="ENS_Helper_21">
-              Announcing the Ethereum Name Service Relaunch Date!
+              Announcing the Kowala Name Service Relaunch Date!
         </a>
       </li>
     </ul>

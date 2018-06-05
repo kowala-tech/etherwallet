@@ -213,7 +213,7 @@ var myWalletsCtrl = function($scope, $sce, $timeout, walletService) {
 			if (data.error) {
 				$scope[varWal][id].balance = data.msg;
 			} else {
-				$scope[varWal][id].balance = etherUnits.toEther(
+				$scope[varWal][id].balance = etherUnits.tokCoin(
 					data.data.balance,
 					"wei"
 				);
@@ -286,7 +286,7 @@ var myWalletsCtrl = function($scope, $sce, $timeout, walletService) {
 		try {
 			var priv = $scope.allWallets[$scope.viewWallet.id].priv;
 			if (priv.length == 132)
-				$scope.wallet = Wallet.fromMyEtherWalletKey(priv, $scope.password);
+				$scope.wallet = Wallet.fromKey(priv, $scope.password);
 			else
 				$scope.wallet = Wallet.getWalletFromPrivKeyFile(priv, $scope.password);
 			$scope.viewModal.close();

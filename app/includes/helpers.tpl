@@ -1,11 +1,11 @@
 <div class="" ng-controller="helpersCtrl">
 
   <h1>
-    Convert Ethererum Units (e.g. Ether <-> Wei)
+    Convert kCoinerum Units (e.g. kCoin <-> Wei)
   </h1>
 
   <h2 class="p">
-    Ether Wei Converter
+    kCoin Wei Converter
   </h2>
 
   <section class="mono">
@@ -128,7 +128,7 @@
     ENS Debugger & Data Grabber
   </h1>
   <h2 class="p">
-    Ethereum Name Service Data String Generator
+    Kowala Name Service Data String Generator
   </h2>
   <p class="text-danger">
     This is meant to be a helpful tool for debugging and checking and generating manual reveals when necessary. Use at your own risk. There is no validation on these fields.
@@ -236,7 +236,7 @@
     <div class="form-group col-xs-12">
       <label>
         New Bid Data
-        <small>If your reveals aren't working, this is the string that needs to match your bid data on Etherscan)</small>
+        <small>If your reveals aren't working, this is the string that needs to match your bid data on kCoinscan)</small>
     </label>
       <input class="form-control" type="text" ng-model="shaBid" readonly />
       <p>
@@ -347,7 +347,7 @@
   <br /><br /><br />
 
 
-  <h1> Ether Unit Reference Guide
+  <h1> kCoin Unit Reference Guide
   </h1>
   <table class="table table-striped mono">
     <tr>

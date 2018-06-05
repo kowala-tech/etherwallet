@@ -81,7 +81,7 @@
       "maxTotalImbalance": "1925452883"
     },
     "ETH": {
-      "name": "Ethereum",
+      "name": "Kowala",
       "decimals": 18,
       "address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
     }

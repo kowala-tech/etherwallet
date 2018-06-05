@@ -267,11 +267,11 @@ function TrezorConnect() {
 
     // new implementation with ethereum at beginning
     this.ethereumSignTx = function() {
-        this.signEthereumTx.apply(this, arguments);
+        this.signKowalaTx.apply(this, arguments);
     }
 
     // old fallback
-    this.signEthereumTx = function (
+    this.signKowalaTx = function (
         address_n,
         nonce,
         gas_price,
@@ -410,7 +410,7 @@ function TrezorConnect() {
     };
 
     /**
-     * Sign an Ethereum message
+     * Sign an Kowala message
      *
      * @param {string|array} path
      * @param {string} message to sign (ascii)

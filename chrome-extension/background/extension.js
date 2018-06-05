@@ -110,7 +110,7 @@ function getDomains(str) {
 			domains: [],
 			format: "plain",
 			repo:
-				"https://raw.githubusercontent.com/409H/EtherAddressLookup/master/blacklists/domains.json",
+				"https://raw.githubusercontent.com/409H/kCoinAddressLookup/master/blacklists/domains.json",
 			identifer: "eal"
 		},
 		iosiro: {
@@ -129,7 +129,7 @@ function getDomains(str) {
 			domains: [],
 			format: "plain",
 			repo:
-				"https://raw.githubusercontent.com/409H/EtherAddressLookup/master/whitelists/domains.json",
+				"https://raw.githubusercontent.com/409H/kCoinAddressLookup/master/whitelists/domains.json",
 			identifer: "whitelist"
 		}
 	}

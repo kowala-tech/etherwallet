@@ -16,7 +16,7 @@
 - Add COIN token [#1880](https://github.com/kvhnuke/etherwallet/pull/1880)
 - YAP Node [#1876](https://github.com/kvhnuke/etherwallet/pull/1876)
 - Add EGT, WYS, IOTX, BTCL, GZR and FYX tokens [#1874](https://github.com/kvhnuke/etherwallet/pull/1874)
-- Add OS.University EDU tokens to MEW [#1871](https://github.com/kvhnuke/etherwallet/pull/1871)
+- Add OS.University EDU tokens to KWT [#1871](https://github.com/kvhnuke/etherwallet/pull/1871)
 
 ### Release v3.21.12
 ### Fixes
@@ -84,7 +84,7 @@
 - Add XGG and DCA tokens [#1813](https://github.com/kvhnuke/etherwallet/pull/1813)
 - Add USDM token [#1811](https://github.com/kvhnuke/etherwallet/pull/1811)
 - Add INRM token [#1809](https://github.com/kvhnuke/etherwallet/pull/1809)
-- Integration for EtherGem [#1807](https://github.com/kvhnuke/etherwallet/pull/1807)
+- Integration for kCoinGem [#1807](https://github.com/kvhnuke/etherwallet/pull/1807)
 - Add FANX and DTH tokens [Commit](https://github.com/kvhnuke/etherwallet/commit/718455e74790e7b36ef9bc7df710c3e2b07454cd)
 - Add Dether token [#1800](https://github.com/kvhnuke/etherwallet/pull/1800)
 - Add MVP and SGT tokens [#1797](https://github.com/kvhnuke/etherwallet/pull/1797)

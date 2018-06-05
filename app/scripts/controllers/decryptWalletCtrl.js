@@ -26,7 +26,7 @@ var decryptWalletCtrl = function($scope, $sce, walletService) {
         hwUbqPath:         "m/44'/108'/0'/0",      // first address: m/44'/40'/0'/0/0
         hwExpansePath:     "m/44'/40'/0'/0",       // first address: m/44'/40'/0'/0/0
         hwEllaismPath:     "m/44'/163'/0'/0",      // first address: m/44'/163'/0'/0/0
-        hwEtherGemPath:    "m/44'/1987'/0'/0",     // first address: m/44'/1987'/0'/0/0
+        hwkCoinGemPath:    "m/44'/1987'/0'/0",     // first address: m/44'/1987'/0'/0/0
         hwCallistoPath:    "m/44'/820'/0'/0",      // first address: m/44'/820'/0'/0/0
         hwSocialPath:      "m/44'/1128'/0'/0",     // first address: m/44'/1128'/0'/0/0
         hwMusicoinPath:    "m/44'/184'/0'/0",      // first address: m/44'/184'/0'/0/0
@@ -91,7 +91,7 @@ var decryptWalletCtrl = function($scope, $sce, walletService) {
                     $scope.HDWallet.dPath = $scope.HDWallet.hwEllaismPath;
                     break;
                 case nodes.nodeTypes.EGEM:
-                    $scope.HDWallet.dPath = $scope.HDWallet.hwEtherGemPath;
+                    $scope.HDWallet.dPath = $scope.HDWallet.hwkCoinGemPath;
                     break;
                 case nodes.nodeTypes.CLO:
                     $scope.HDWallet.dPath = $scope.HDWallet.hwCallistoPath;
@@ -255,7 +255,7 @@ var decryptWalletCtrl = function($scope, $sce, walletService) {
         $scope.wallet = null;
         try {
           if ($scope.showPDecrypt && $scope.requirePPass) {
-            $scope.wallet = Wallet.fromMyEtherWalletKey($scope.manualprivkey, $scope.privPassword);
+            $scope.wallet = Wallet.fromKey($scope.manualprivkey, $scope.privPassword);
             walletService.password = $scope.privPassword;
           } else if ($scope.showPDecrypt && !$scope.requirePPass) {
             let privKey = $scope.manualprivkey.indexOf("0x") === 0 ? $scope.manualprivkey : "0x" + $scope.manualprivkey;

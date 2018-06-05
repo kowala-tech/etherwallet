@@ -34,17 +34,17 @@ etherUnits.getValueOfUnit = function(unit) {
 	}
 	return new BigNumber(unitValue, 10);
 };
-etherUnits.fiatToWei = function(number, pricePerEther) {
-	var returnValue = new BigNumber(String(number)).div(pricePerEther).times(this.getValueOfUnit('ether')).round(0);
+etherUnits.fiatToWei = function(number, pricePerkCoin) {
+	var returnValue = new BigNumber(String(number)).div(pricePerkCoin).times(this.getValueOfUnit('ether')).round(0);
 	return returnValue.toString(10);
 };
 
 etherUnits.toFiat = function(number, unit, multi) {
-	var returnValue = new BigNumber(this.toEther(number, unit)).times(multi).round(5);
+	var returnValue = new BigNumber(this.tokCoin(number, unit)).times(multi).round(5);
 	return returnValue.toString(10);
 };
 
-etherUnits.toEther = function(number, unit) {
+etherUnits.tokCoin = function(number, unit) {
 	var returnValue = new BigNumber(this.toWei(number, unit)).div(this.getValueOfUnit('ether'));
 	return returnValue.toString(10);
 };

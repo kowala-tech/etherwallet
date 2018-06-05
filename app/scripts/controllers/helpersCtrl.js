@@ -55,7 +55,7 @@ var helpersCtrl = function($scope) {
     }
 
     $scope.toBidEth = function() {
-        $scope.bidEth = $scope.bidWei ? Number(etherUnits.toEther($scope.bidWei, 'wei')) : '';
+        $scope.bidEth = $scope.bidWei ? Number(etherUnits.tokCoin($scope.bidWei, 'wei')) : '';
         $scope.toBidHex();
     }
 

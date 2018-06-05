@@ -63,7 +63,7 @@ Token.getTokenByAddress = function(toAdd) {
 };
 Token.prototype.getData = function(toAdd, value) {
     try {
-        if (!ethFuncs.validateEtherAddress(toAdd)) throw globalFuncs.errorMsgs[5];
+        if (!ethFuncs.validatekCoinAddress(toAdd)) throw globalFuncs.errorMsgs[5];
         else if (!globalFuncs.isNumeric(value) || parseFloat(value) < 0) throw globalFuncs.errorMsgs[7];
         var value = ethFuncs.padLeft(new BigNumber(value).times(new BigNumber(10).pow(this.getDecimal())).toString(16), 64);
         var toAdd = ethFuncs.padLeft(ethFuncs.getNakedAddress(toAdd), 64);

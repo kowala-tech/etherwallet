@@ -27,11 +27,11 @@ SecalotEth.getErrorMessage = function(sw, operation) {
     var errorMessage;
 
     if (sw == 0x6d00) {
-        errorMessage = "Ethereum wallet on your Secalot is not initialized.";
+        errorMessage = "Kowala wallet on your Secalot is not initialized.";
     }
     else if (sw == 0x6982) {
         if(operation == "getPublicKey") {
-            errorMessage = "Invalid PIN-code. Be careful, after entering a wrong PIN-code three times in a row, your Secalot Ethereum wallet would be permanently wiped.";
+            errorMessage = "Invalid PIN-code. Be careful, after entering a wrong PIN-code three times in a row, your Secalot Kowala wallet would be permanently wiped.";
         }
         else {
             errorMessage = "PIN-code not verified."
@@ -204,7 +204,7 @@ SecalotEth.prototype.signMessage = function(path, message, callback) {
     var rawData;
     var apdus = [];
 
-    message = '\x19Ethereum Signed Message:\n' + message.length.toString() + message;
+    message = '\x19Kowala Signed Message:\n' + message.length.toString() + message;
     rawData = new Buffer( Buffer.from(message).toString("hex"), 'hex');
 
     while (offset != rawData.length) {

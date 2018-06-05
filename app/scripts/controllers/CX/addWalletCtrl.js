@@ -134,7 +134,7 @@ var addWalletCtrl = function($scope, $sce) {
         $scope.addWalletStats = "";
         try {
             if ($scope.walletType == "pasteprivkey" && $scope.requirePPass) {
-                $scope.wallet = Wallet.fromMyEtherWalletKey($scope.manualprivkey, $scope.privPassword);
+                $scope.wallet = Wallet.fromKey($scope.manualprivkey, $scope.privPassword);
                 $scope.addAccount.password = $scope.privPassword;
             } else if ($scope.walletType == "pasteprivkey" && !$scope.requirePPass) {
                 $scope.wallet = new Wallet($scope.manualprivkey);
@@ -172,9 +172,9 @@ var addWalletCtrl = function($scope, $sce) {
 
     }
     $scope.watchOnlyChange = function() {
-        if ($scope.addAccount.address != "" && $scope.addAccount.nickName != "" && $scope.nickNames.indexOf($scope.addAccount.nickName) == -1 && ethFuncs.validateEtherAddress($scope.addAccount.address)) $scope.showBtnAdd = true;
+        if ($scope.addAccount.address != "" && $scope.addAccount.nickName != "" && $scope.nickNames.indexOf($scope.addAccount.nickName) == -1 && ethFuncs.validatekCoinAddress($scope.addAccount.address)) $scope.showBtnAdd = true;
         else $scope.showBtnAdd = false;
-        if ($scope.addAccount.address != "" && !ethFuncs.validateEtherAddress($scope.addAccount.address)) $scope.notifier.danger(globalFuncs.errorMsgs[5]);
+        if ($scope.addAccount.address != "" && !ethFuncs.validatekCoinAddress($scope.addAccount.address)) $scope.notifier.danger(globalFuncs.errorMsgs[5]);
         else if ($scope.nickNames.indexOf($scope.addAccount.nickName) !== -1) $scope.notifier.danger(globalFuncs.errorMsgs[13]);
 
     }
@@ -260,7 +260,7 @@ var addWalletCtrl = function($scope, $sce) {
             if (data.error) {
                 $scope.etherBalance = data.msg;
             } else {
-                $scope.etherBalance = etherUnits.toEther(data.data.balance, 'wei');
+                $scope.etherBalance = etherUnits.tokCoin(data.data.balance, 'wei');
                 ajaxReq.getETHvalue(function(data) {
                     $scope.usdBalance = etherUnits.toFiat($scope.etherBalance, 'ether', data.usd);
                     $scope.eurBalance = etherUnits.toFiat($scope.etherBalance, 'ether', data.eur);

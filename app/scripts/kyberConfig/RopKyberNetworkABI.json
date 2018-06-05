@@ -305,7 +305,7 @@
 			{ "name": "amount", "type": "uint256" },
 			{ "name": "sendTo", "type": "address" }
 		],
-		"name": "withdrawEther",
+		"name": "withdrawkCoin",
 		"outputs": [],
 		"payable": false,
 		"stateMutability": "nonpayable",
@@ -386,7 +386,7 @@
 			{ "indexed": true, "name": "sender", "type": "address" },
 			{ "indexed": false, "name": "amount", "type": "uint256" }
 		],
-		"name": "EtherReceival",
+		"name": "kCoinReceival",
 		"type": "event"
 	},
 	{
@@ -405,7 +405,7 @@
 			{ "indexed": false, "name": "amount", "type": "uint256" },
 			{ "indexed": false, "name": "sendTo", "type": "address" }
 		],
-		"name": "WithdrawEther",
+		"name": "WithdrawkCoin",
 		"type": "event"
 	},
 	{

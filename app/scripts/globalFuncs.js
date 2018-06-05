@@ -304,7 +304,7 @@ globalFuncs.doesTokenExistInDefaultTokens = function(token, defaultTokensAndNetw
 
 globalFuncs.saveTokenToLocal = function(localToken, callback) {
     try {
-        if (!ethFuncs.validateEtherAddress(localToken.contractAdd)) {throw globalFuncs.errorMsgs[5]}
+        if (!ethFuncs.validatekCoinAddress(localToken.contractAdd)) {throw globalFuncs.errorMsgs[5]}
         else if (!globalFuncs.isNumeric(localToken.decimals) || parseFloat(localToken.decimals) < 0) {throw globalFuncs.errorMsgs[7]}
         else if (globalFuncs.isAlphaNumericOrSpec(localToken.symbol) || localToken.symbol === "") {throw globalFuncs.errorMsgs[19]}
         var storedTokens = globalFuncs.localStorage.getItem("localTokens", null) != null ? JSON.parse(globalFuncs.localStorage.getItem("localTokens")) : [];

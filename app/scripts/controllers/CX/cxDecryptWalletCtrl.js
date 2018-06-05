@@ -19,7 +19,7 @@ var cxDecryptWalletCtrl = function($scope, $sce, walletService) {
 			if (data.error) {
 				$scope.allWallets[id].balance = data.msg;
 			} else {
-                $scope.allWallets[id].balance = etherUnits.toEther(data.data.balance, 'wei');
+                $scope.allWallets[id].balance = etherUnits.tokCoin(data.data.balance, 'wei');
 			}
 		});
 	};
@@ -38,7 +38,7 @@ var cxDecryptWalletCtrl = function($scope, $sce, walletService) {
 		try {
             var priv = $scope.getPrivFromAdd();
             if (priv.length==132)
-				$scope.wallet = Wallet.fromMyEtherWalletKey(priv, $scope.password);
+				$scope.wallet = Wallet.fromKey(priv, $scope.password);
             else
                 $scope.wallet = Wallet.getWalletFromPrivKeyFile(priv, $scope.password);
             walletService.password = $scope.password;

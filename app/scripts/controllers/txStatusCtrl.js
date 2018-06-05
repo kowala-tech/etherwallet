@@ -42,12 +42,12 @@ var txStatusCtrl = function($scope) {
                 from: ethUtil.toChecksumAddress(tx.from),
                 to: tx.to ? ethUtil.toChecksumAddress(tx.to) : '',
                 value: new BigNumber(tx.value).toString(),
-                valueStr: etherUnits.toEther(tx.value, 'wei') + " ETH",
+                valueStr: etherUnits.tokCoin(tx.value, 'wei') + " ETH",
                 gasLimit: new BigNumber(tx.gas).toString(),
                 gasPrice: {
                     wei: new BigNumber(tx.gasPrice).toString(),
                     gwei: new BigNumber(tx.gasPrice).div(etherUnits.getValueOfUnit('gwei')).toString(),
-                    eth: etherUnits.toEther(tx.gasPrice, 'wei')
+                    eth: etherUnits.tokCoin(tx.gasPrice, 'wei')
                 },
                 data: tx.input == '0x' ? '' : tx.input,
                 nonce: new BigNumber(tx.nonce).toString()

@@ -1,8 +1,8 @@
 {
-    "name": "MyEtherWallet",
+    "name": "Kowala Wallet Tools",
     "version": "3.21.07",
-    "description": "An NPM dist of MyEtherWallet. For easier downloading & updating via CLI.",
-    "author": "MyEtherWallet",
+    "description": "An NPM dist of Kowala Wallet Tools. For easier downloading & updating via CLI.",
+    "author": "Kowala Wallet Tools",
     "license": "ISC",
     "devDependencies": {
         "open": "0.0.5"

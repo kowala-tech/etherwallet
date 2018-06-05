@@ -15,7 +15,7 @@ uiFuncs.getTxData = function($scope) {
     };
 }
 uiFuncs.isTxDataValid = function(txData) {
-    if (txData.to != "0xCONTRACT" && !ethFuncs.validateEtherAddress(txData.to)) throw globalFuncs.errorMsgs[5];
+    if (txData.to != "0xCONTRACT" && !ethFuncs.validatekCoinAddress(txData.to)) throw globalFuncs.errorMsgs[5];
     else if (!globalFuncs.isNumeric(txData.value) || parseFloat(txData.value) < 0) throw globalFuncs.errorMsgs[0];
     else if (!globalFuncs.isNumeric(txData.gasLimit) || parseFloat(txData.gasLimit) <= 0) throw globalFuncs.errorMsgs[8];
     else if (!ethFuncs.validateHexString(txData.data)) throw globalFuncs.errorMsgs[9];
@@ -43,7 +43,7 @@ uiFuncs.signTxTrezor = function(rawTx, txData, callback) {
         if (callback !== undefined) callback(rawTx);
     }
 
-    TrezorConnect.signEthereumTx(
+    TrezorConnect.signKowalaTx(
         txData.path,
         ethFuncs.getNakedAddress(rawTx.nonce),
         ethFuncs.getNakedAddress(rawTx.gasPrice),
@@ -281,7 +281,7 @@ uiFuncs.transferAllBalance = function(fromAdd, gasLimit, callback) {
             data = data.data;
             var gasPrice = new BigNumber(ethFuncs.sanitizeHex(ethFuncs.addTinyMoreToGas(data.gasprice))).times(gasLimit);
             var maxVal = new BigNumber(data.balance).minus(gasPrice);
-            maxVal = etherUnits.toEther(maxVal, 'wei') < 0 ? 0 : etherUnits.toEther(maxVal, 'wei');
+            maxVal = etherUnits.tokCoin(maxVal, 'wei') < 0 ? 0 : etherUnits.tokCoin(maxVal, 'wei');
             if (callback !== undefined) callback({
                 isError: false,
                 unit: "ether",

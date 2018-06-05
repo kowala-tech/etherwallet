@@ -36,19 +36,19 @@ nodes.nodeList = {
         'service': 'Zygote Testnet',
         'lib': new nodes.customNode('http://rpcnode.testnet.kowala.io', '30503')
     },
-    'kusd_mainnet': {
-        'name': 'kUSD',
-        'blockExplorerTX': '',
-        'blockExplorerAddr': '',
-        'type': nodes.nodeTypes.kUSD,
-        'eip155': false,
-        'chainId': 1,
-        'tokenList': [],
-        'abiList': [],
-        'estimateGas': false,
-        'service': 'Zygote Mainnet',
-        'lib': new nodes.customNode('http://rpcnode.testnet.kowala.io', '30503')
-    }
+    // 'kusd_mainnet': {
+    //     'name': 'kUSD',
+    //     'blockExplorerTX': '',
+    //     'blockExplorerAddr': '',
+    //     'type': nodes.nodeTypes.kUSD,
+    //     'eip155': false,
+    //     'chainId': 1,
+    //     'tokenList': [],
+    //     'abiList': [],
+    //     'estimateGas': false,
+    //     'service': 'Zygote Mainnet',
+    //     'lib': new nodes.customNode('http://rpcnode.testnet.kowala.io', '30503')
+    // }
 };
 
 

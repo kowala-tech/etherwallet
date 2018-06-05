@@ -7,9 +7,9 @@
         <p>
           The
           <a href="http://ens.readthedocs.io/en/latest/introduction.html" target="_blank" rel="noopener noreferrer">
-            Ethereum Name Service
+            Kowala Name Service
           </a>
-          is a distributed, open, and extensible naming system based on the Ethereum blockchain.
+          is a distributed, open, and extensible naming system based on the Kowala blockchain.
           Once you have a name, you can tell your friends to send ETH to <code>mewtopia.eth</code> instead of <code>0x7cB57B5A97eAbe942.....</code>.
         </p>
       </article>

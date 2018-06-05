@@ -4,13 +4,13 @@ var validator = function() {}
 validator.isValidAddress = function(address) {
     if (address && address == "0x0000000000000000000000000000000000000000") return false;
     if (address)
-        return ethFuncs.validateEtherAddress(address);
+        return ethFuncs.validatekCoinAddress(address);
     return false;
 }
 validator.isChecksumAddress = function(address) {
     return ethFuncs.isChecksumAddress(address);
 }
-validator.isValidENSorEtherAddress = function(address) {
+validator.isValidENSorkCoinAddress = function(address) {
     return (validator.isValidAddress(address) || validator.isValidENSAddress(address));
 }
 validator.isValidSubName = function(str) {

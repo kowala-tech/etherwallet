@@ -156,7 +156,7 @@ var signMsgCtrl = function($scope, $sce, walletService) {
                     msg: thisMessage,
                     sig: '0x' + combinedHex,
                     version: '3',
-                    signer: 'MEW'
+                    signer: 'KWT'
                 }, null, 2)
                 $scope.notifier.success('Successfully Signed Message with ' + signingAddr)
             }
@@ -173,7 +173,7 @@ var signMsgCtrl = function($scope, $sce, walletService) {
         }
     }
     var getTrezorHash = function(msg) {
-        return ethUtil.sha3(Buffer.concat([ethUtil.toBuffer("\u0019Ethereum Signed Message:\n"), getTrezorLenBuf(msg.length), ethUtil.toBuffer(msg)]))
+        return ethUtil.sha3(Buffer.concat([ethUtil.toBuffer("\u0019Kowala Signed Message:\n"), getTrezorLenBuf(msg.length), ethUtil.toBuffer(msg)]))
     }
     $scope.verifySignedMessage = function() {
         try {

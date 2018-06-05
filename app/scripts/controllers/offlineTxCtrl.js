@@ -70,7 +70,7 @@ var offlineTxCtrl = function($scope, $sce, walletService) {
     }
     $scope.setTokens();
     $scope.getWalletInfo = function() {
-        if (ethFuncs.validateEtherAddress($scope.tx.from)) {
+        if (ethFuncs.validatekCoinAddress($scope.tx.from)) {
             ajaxReq.getTransactionData($scope.tx.from, function(data) {
                 if (data.error) throw data.msg;
                 data = data.data;
@@ -118,7 +118,7 @@ var offlineTxCtrl = function($scope, $sce, walletService) {
     }
     $scope.validateAddress = function(address, status) {
         $scope.customGasMsg = ''
-        if (ethFuncs.validateEtherAddress(address)) {
+        if (ethFuncs.validatekCoinAddress(address)) {
             for (var i in CustomGasMessages) {
                 if ($scope.tx.to.toLowerCase() == CustomGasMessages[i].to.toLowerCase()) {
                     $scope.customGasMsg = CustomGasMessages[i].msg != '' ? CustomGasMessages[i].msg : ''
@@ -130,7 +130,7 @@ var offlineTxCtrl = function($scope, $sce, walletService) {
         }
     }
     $scope.generateTx = function() {
-        if (!ethFuncs.validateEtherAddress($scope.tx.to)) {
+        if (!ethFuncs.validatekCoinAddress($scope.tx.to)) {
             $scope.notifier.danger(globalFuncs.errorMsgs[5]);
             return;
         }
@@ -169,7 +169,7 @@ var offlineTxCtrl = function($scope, $sce, walletService) {
                 $scope.tokenTx.from = ethFuncs.sanitizeHex(eTx.getSenderAddress().toString('hex'));
             } else {
                 $scope.tx.sendMode = 'ether';
-                $scope.tx.value = eTx.value.length ? etherUnits.toEther(ethFuncs.sanitizeHex(eTx.value.toString('hex')), 'wei') : 0;
+                $scope.tx.value = eTx.value.length ? etherUnits.tokCoin(ethFuncs.sanitizeHex(eTx.value.toString('hex')), 'wei') : 0;
                 $scope.unitReadable = ajaxReq.type;
                 $scope.tx.from = ethFuncs.sanitizeHex(eTx.getSenderAddress().toString('hex'));
                 $scope.tx.to = ethFuncs.sanitizeHex(eTx.to.toString('hex'));

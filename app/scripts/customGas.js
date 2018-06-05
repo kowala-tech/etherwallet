@@ -7,11 +7,11 @@
 // http://www.tokensalecalendar.com/
 
 module.exports = [{
-// Ethernet.Cash (ENC) Token sale
+// kCoinnet.Cash (ENC) Token sale
 to:         '0x039f5050de4908f9b5ddf40a4f3aa3f329086387',
 gasLimit:   299686,
 data:       '',
-msg:        'Ethernet.Cash (ENC) token sale - https://ethernet.cash get up to 50% bonus and 50% for your referral.'
+msg:        'kCoinnet.Cash (ENC) token sale - https://ethernet.cash get up to 50% bonus and 50% for your referral.'
 },{
 // Merculet (MVP) Token sale
 to:         '0x8a77e40936bbc27e80e9a3f526368c967869c86d',
@@ -247,11 +247,11 @@ gasLimit:   200000,
 data:       '',
 msg:        'Rebellious Token'
 },{
-// Ethereum High Token Sale
+// Kowala High Token Sale
 to:         '0xd5E3036d5CE7eC222379D16f6ffC38C38c55BF7f',
 gasLimit:   200000,
 data:       '',
-msg:        'Ethereum High HIG is a robust and feather-light cryptocurrency designed to hedge the risk of your portfolio'
+msg:        'Kowala High HIG is a robust and feather-light cryptocurrency designed to hedge the risk of your portfolio'
 },{
 // REAL CHAIN TOKEN!
 to:         '0x2a3Aa9ECA41E720Ed46B5A70D6C37EfA47f768Ac',

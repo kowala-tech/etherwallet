@@ -46,7 +46,7 @@ var addressFieldDrtv = function($compile, darkList) {
             element.html(`
               <div class="col-xs-11">
                 <label translate="${labelTranslated}"></label>
-                <input class="form-control" type="text" placeholder="${placeholder}" ng-model="addressDrtv.ensAddressField" ng-disabled="addressDrtv.readOnly" ng-class="Validator.isValidENSorEtherAddress(${varName}) ? 'is-valid' : 'is-invalid'"/>
+                <input class="form-control" type="text" placeholder="${placeholder}" ng-model="addressDrtv.ensAddressField" ng-disabled="addressDrtv.readOnly" ng-class="Validator.isValidENSorkCoinAddress(${varName}) ? 'is-valid' : 'is-invalid'"/>
                 <p class="ens-response" ng-show="addressDrtv.showDerivedAddress">
                   <span class="mono ng-binding"> ↳ {{addressDrtv.derivedAddress}} </span>
                 </p>

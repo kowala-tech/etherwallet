@@ -31,7 +31,7 @@ var globalService = function($http, $httpParamSerializerJQLike) {
   },
   sendTransaction: {
     id: 3,
-    name: "NAV_SendEther",
+    name: "NAV_SendkCoin",
     url: "send-transaction",
     mew: true,
     cx: true

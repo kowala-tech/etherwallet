@@ -229,7 +229,7 @@ kyberFuncs.prototype.convertToTokenBase = function (_value, _token) {
 
         return numnum;
     } else {
-        return etherUnits.toEther(_value, "wei");
+        return etherUnits.tokCoin(_value, "wei");
     }
 };
 

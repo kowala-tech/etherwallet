@@ -439,7 +439,7 @@ const darklist = function() {
 		},
 		{
 			address: "0x1de23F02E185fDc4f6BACc98D6c6419370E38538",
-			comment: "Fake Etherscan site for a fake Monetha ICO address",
+			comment: "Fake kCoinscan site for a fake Monetha ICO address",
 			date: "2018-03-12"
 		},
 		{
@@ -1129,7 +1129,7 @@ const darklist = function() {
 		},
 		{
 			address: "0xE10270BFb1eD82E120BfC392efb3C94a1604DeD6",
-			comment: "Fake EtherDelta",
+			comment: "Fake kCoinDelta",
 			date: "2018-03-12"
 		},
 		{
@@ -1175,12 +1175,12 @@ const darklist = function() {
 		{
 			address: "0x58a166f9a6ff996e2349eea90d42cc198529a037",
 			comment:
-				"Fake airdrop site redirecting to a fake MEW xn--myeherwalet-ns8exy.com",
+				"Fake airdrop site redirecting to a fake KWT xn--myeherwalet-ns8exy.com",
 			date: "2018-03-12"
 		},
 		{
 			address: "0x58a166f9a6ff996e2349eea90d42cc198529a037",
-			comment: "Fake MEW",
+			comment: "Fake KWT",
 			date: "2018-03-12"
 		},
 		{
@@ -1216,7 +1216,7 @@ const darklist = function() {
 		{
 			address: "0xf33068d5e798f6519349Ce32669D1EC940Db1193",
 			comment:
-				"Etherzero chain split but need to send coins to this address to buy the new coins - does not add up.",
+				"kCoinzero chain split but need to send coins to this address to buy the new coins - does not add up.",
 			date: "2018-03-12"
 		},
 		{
@@ -1242,7 +1242,7 @@ const darklist = function() {
 		{
 			address: "0xC1dD8Ac971129C8C08333924F58Ff40a50b8bb9a",
 			comment:
-				"Fake Etherzero wallet site asking for ETH to be sent to an address",
+				"Fake kCoinzero wallet site asking for ETH to be sent to an address",
 			date: "2018-03-12"
 		},
 		{
@@ -1278,7 +1278,7 @@ const darklist = function() {
 		{
 			address: "0xac3800002e45ed2e1a55dedfa2aca137f6dba61e",
 			comment:
-				"Etherzero domain, but nothing supporting it being the legit domain. Also hosted on a server used before to host other phishing campaigns. Asking for your chain code.",
+				"kCoinzero domain, but nothing supporting it being the legit domain. Also hosted on a server used before to host other phishing campaigns. Asking for your chain code.",
 			date: "2018-03-12"
 		},
 		{
@@ -1439,7 +1439,7 @@ const darklist = function() {
 		},
 		{
 			address: "0xbb53be0690ae7256833099a1f01125eb33445692",
-			comment: "Fake EtherDelta Android app, phishing for private keys",
+			comment: "Fake kCoinDelta Android app, phishing for private keys",
 			date: "2018-03-12"
 		},
 		{
@@ -1464,7 +1464,7 @@ const darklist = function() {
 		},
 		{
 			address: "0xdafc2a2d4e070f863cfcb5887bc2516e05e18877",
-			comment: "Fake MyEtherWallet",
+			comment: "Fake Kowala Wallet Tools",
 			date: "2018-03-12"
 		},
 		{
@@ -2876,7 +2876,7 @@ const darklist = function() {
 		},
 		{
 			address: "0x6721b09f4fB6Fe69a14aDD6d1f2C1b94562e7801",
-			comment: "MEW Phishing - xn--metherwallet-c06f.com",
+			comment: "KWT Phishing - xn--metherwallet-c06f.com",
 			date: "2017-10-26"
 		},
 		{
@@ -3093,13 +3093,13 @@ const darklist = function() {
 		{
 			address: "0x48d0a447b1d7b9a89112578db4536032d3047b2e",
 			comment:
-				"Pretending to be Poloniex support on Etherscan Disqus (username: @poloniex) - asking for ETH to speed up support queries",
+				"Pretending to be Poloniex support on kCoinscan Disqus (username: @poloniex) - asking for ETH to speed up support queries",
 			date: "2017-09-13"
 		},
 		{
 			address: "0x40B942240fEc55473388Cbf7DBCC5482e64b4367",
 			comment:
-				"Pretending to be Coinbase support on Etherscan Disqus (username: @coinbasesupport) - asking for ETH to speed up support queries",
+				"Pretending to be Coinbase support on kCoinscan Disqus (username: @coinbasesupport) - asking for ETH to speed up support queries",
 			date: "2017-09-13"
 		},
 		{
@@ -3425,7 +3425,7 @@ const darklist = function() {
 		{
 			address: "0x66817272D39Da7fd4C552F430fC0B694e357c157",
 			comment:
-				"Comments on Etherscan are reporting funds being stolen and ending up at this address.",
+				"Comments on kCoinscan are reporting funds being stolen and ending up at this address.",
 			date: "2017-07-19"
 		},
 		{

@@ -244,7 +244,7 @@
            ng-hide="isSSL">
         <span class="text-danger"
               translate="ADD_Ledger_0a" >
-            Please use MyEtherWallet on a secure (SSL / HTTPS) connection to connect.
+            Please use Kowala Wallet Tools on a secure (SSL / HTTPS) connection to connect.
         </span>
       </div>
       <div class="form-group">
@@ -275,10 +275,10 @@
       </div>
       <ul>
         <li class="u__protip">
-          <a href="https://ledger.zendesk.com/hc/en-us/articles/115005200009-How-to-use-MyEtherWallet-with-Ledger"
+          <a href="https://ledger.zendesk.com/hc/en-us/articles/115005200009-How-to-use-Kowala Wallet Tools-with-Ledger"
              target="_blank"
              rel="noopener noreferrer">
-          How to use MyEtherWallet with your Ledger Hardware Wallet
+          How to use Kowala Wallet Tools with your Ledger Hardware Wallet
           </a>
         </li>
         <li class="u__protip">
@@ -306,11 +306,11 @@
         <ul>
           <li ng-hide="isSSL"
               translate="ADD_Ledger_0a" >
-                Please use MyEtherWallet on a secure (SSL / HTTPS) connection to connect.
+                Please use Kowala Wallet Tools on a secure (SSL / HTTPS) connection to connect.
           </li>
           <li>
             <span translate="ADD_Ledger_2" ng-if="ajaxReq.type=='ETH'||ajaxReq.type=='ETC'||ajaxReq.type=='ROPSTEN ETH'||ajaxReq.type=='RINKEBY ETH'||ajaxReq.type=='KOVAN ETH'">
-              Open the Ethereum application (or a contract application)
+              Open the Kowala application (or a contract application)
             </span>
             <span translate="ADD_Ledger_2_Exp" ng-if="ajaxReq.type=='EXP'">
               Open the Expanse application (or a contract application)
@@ -349,7 +349,7 @@
           <a href="https://blog.trezor.io/trezor-integration-with-myetherwallet-3e217a652e08#.n5fddxmdg"
              target="_blank"
              rel="noopener noreferrer">
-               How to use TREZOR with MyEtherWallet
+               How to use TREZOR with Kowala Wallet Tools
           </a>
         </li>
         <li class="u__protip">
@@ -377,7 +377,7 @@
         <ul>
           <li ng-hide="isSSL"
               translate="ADD_Ledger_0a" >
-                Please use MyEtherWallet on a secure (SSL / HTTPS) connection to connect.
+                Please use Kowala Wallet Tools on a secure (SSL / HTTPS) connection to connect.
           </li>
           <li>
                 Ensure you are not blocking pop-ups on this site.
@@ -412,7 +412,7 @@
           <a href="https://digitalbitbox.com/ethereum"
              target="_blank"
              rel="noopener noreferrer">
-               How to use Digital Bitbox with MyEtherWallet
+               How to use Digital Bitbox with Kowala Wallet Tools
           </a>
         </li>
         <li class="u__protip">
@@ -457,7 +457,7 @@
           <a href="https://www.secalot.com/documentation/ethereum-wallet/"
              target="_blank"
              rel="noopener noreferrer">
-               How to use Secalot with MyEtherWallet
+               How to use Secalot with Kowala Wallet Tools
           </a>
         </li>
         <li class="u__protip">
@@ -469,10 +469,10 @@
         </li>
       </ul>
       <input class="form-control"
-             aria-label="Enter your Secalot Ethereum wallet PIN-code"
+             aria-label="Enter your Secalot Kowala wallet PIN-code"
              aria-describedby="selectedTypeSecalot"
              type="password"
-             placeholder="Secalot Ethereum wallet PIN-code"
+             placeholder="Secalot Kowala wallet PIN-code"
              spellcheck="false"
              value=""
              ng-model="HDWallet.secalotSecret" />
@@ -512,7 +512,7 @@
           <a href="https://myetherwallet.github.io/knowledge-base/offline/running-myetherwallet-locally.html"
              target="_blank"
              rel="noopener noreferrer">
-              Running MEW Offline &amp; Locally
+              Running KWT Offline &amp; Locally
           </a>
         </li>
         <li>
@@ -588,7 +588,7 @@
           <a href="https://myetherwallet.github.io/knowledge-base/offline/running-myetherwallet-locally.html"
              target="_blank"
              rel="noopener noreferrer">
-              Running MEW Offline &amp; Locally
+              Running KWT Offline &amp; Locally
           </a>
         </li>
         <li>
@@ -669,7 +669,7 @@
           <a href="https://myetherwallet.github.io/knowledge-base/offline/running-myetherwallet-locally.html"
              target="_blank"
              rel="noopener noreferrer">
-              Running MEW Offline &amp; Locally
+              Running KWT Offline &amp; Locally
           </a>
         </li>
         <li>
@@ -909,14 +909,14 @@
 
             <div class="col-sm-4">
               <label class="radio small">
-                <input aria-describedby="Path: TREZOR (EGEM) {{HDWallet.hwEtherGemPath}}"
+                <input aria-describedby="Path: TREZOR (EGEM) {{HDWallet.hwkCoinGemPath}}"
                        ng-change="onHDDPathChange()"
                        ng-model="HDWallet.dPath"
                        type="radio"
-                      value="{{HDWallet.hwEtherGemPath}}"/>
-                <span ng-bind="HDWallet.hwEtherGemPath"></span>
+                      value="{{HDWallet.hwkCoinGemPath}}"/>
+                <span ng-bind="HDWallet.hwkCoinGemPath"></span>
                 <p class="small">
-                  Network: EtherGem
+                  Network: kCoinGem
                 </p>
               </label>
             </div>
@@ -944,7 +944,7 @@
                       value="{{HDWallet.hwSocialPath}}"/>
                 <span ng-bind="HDWallet.hwSocialPath"></span>
                 <p class="small">
-                  Network: Ethereum Social
+                  Network: Kowala Social
                 </p>
               </label>
             </div>
