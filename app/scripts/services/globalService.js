@@ -40,14 +40,14 @@ var globalService = function($http, $httpParamSerializerJQLike) {
     id: 4,
     name: "NAV_Swap",
     url: "swap",
-    mew: false,
-    cx: false
+    mew: true,
+    cx: true
   },
   offlineTransaction: {
     id: 5,
     name: "NAV_Offline",
     url:"offline-transaction",
-    mew: false,
+    mew: true,
     cx: false
   },
   contracts: {
@@ -61,15 +61,15 @@ var globalService = function($http, $httpParamSerializerJQLike) {
     id:7,
     name: "NAV_ENS",
     url: "ens",
-    mew: false,
-    cx: false
+    mew: true,
+    cx: true
   },
   domainsale: {
     id: 8,
     name: "NAV_DomainSale",
     url: "domainsale",
-    mew: false,
-    cx: false
+    mew: true,
+    cx: true
   },
   txStatus: {
     id: 9,
@@ -82,7 +82,7 @@ var globalService = function($http, $httpParamSerializerJQLike) {
     id: 10,
     name: "NAV_ViewWallet",
     url: "view-wallet-info",
-    mew: false,
+    mew: true,
     cx: false
   },
   signMsg: {
@@ -114,3 +114,5 @@ var globalService = function($http, $httpParamSerializerJQLike) {
 }
 
 module.exports = globalService
+
+

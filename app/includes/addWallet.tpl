@@ -189,7 +189,7 @@
         </h4>
 
         <p class="text-danger" translate="ADD_Warning_1">
-          You can add any account to "watch" on the wallets tab without uploading a private key. This does ** not ** mean you have access to this wallet, nor can you transfer kUSD from it.
+          You can add any account to "watch" on the wallets tab without uploading a private key. This does ** not ** mean you have access to this wallet, nor can you transfer Ether from it.
         </p>
 
         <div class="form-group">
@@ -312,10 +312,52 @@
           <strong>
             {{etherBalance}}
           </strong>
-          kUSD
+          ETH
         </li>
       </ul>
 
+      <h5 translate="sidebar_Equiv">
+        Equivalent Values:
+      </h5>
+
+      <ul class="account-info">
+        <li>
+          <strong>
+            {{usdBalance}}
+          </strong>
+          USD
+        </li>
+        <li>
+          <strong>
+            {{eurBalance}}
+          </strong>
+          EUR
+        </li>
+        <li>
+          <strong>
+            {{btcBalance}}
+          </strong>
+          BTC
+        </li>
+      </ul>
+
+      <a ng-click="globalService.currentTab=globalService.tabs.swap.id"
+         class="btn btn-primary btn-xs">
+           Swap via Bity
+      </a>
+
+      <h5 translate="sidebar_TransHistory">
+        Transaction History:
+      </h5>
+      <ul class="account-info">
+        <li>
+          <a href="https://etherscan.io/address/{{wallet.getAddressString()}}"
+             target="_blank"
+             rel="noopener noreferrer">
+               https://etherscan.io/address/ {{wallet.getAddressString()}}
+          </a>
+        </li>
+      </ul>
     </section>
     <!-- / Sidebar -->
 
@@ -419,13 +461,13 @@
                   <span ng-bind="HDWallet.defaultDPath"></span>
                 </label>
               </td>
-              <td> Jaxx, Metamask, Exodus, imToken &amp; TREZOR (kUSD)</td>
+              <td> Jaxx, Metamask, Exodus, imToken &amp; TREZOR (ETH)</td>
             </tr>
 
             <tr>
               <td>
                 <label class="radio">
-                  <input aria-describedby="Path: Ledger (kUSD) {{HDWallet.ledgerPath}}"
+                  <input aria-describedby="Path: Ledger (ETH) {{HDWallet.ledgerPath}}"
                          ng-change="onHDDPathChange()"
                          ng-model="HDWallet.dPath"
                          type="radio"
@@ -433,7 +475,7 @@
                   <span ng-bind="HDWallet.ledgerPath"></span>
                 </label>
               </td>
-              <td> Ledger (kUSD)</td>
+              <td> Ledger (ETH)</td>
             </tr>
 
             <tr>

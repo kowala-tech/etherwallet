@@ -4,22 +4,22 @@ nodes.customNode = require('./nodeHelpers/customNode');
 nodes.infuraNode = require('./nodeHelpers/infura');
 nodes.metamaskNode = require('./nodeHelpers/metamask');
 nodes.nodeTypes = {
-    kUSD: "kUSD",
+    ETH: "ETH",
     ETC: "ETC",
     MUS: "MUSIC",
-    Ropsten: "ROPSTEN kUSD",
-    Kovan: "KOVAN kUSD",
-    Rinkeby: "RINKEBY kUSD",
+    Ropsten: "ROPSTEN ETH",
+    Kovan: "KOVAN ETH",
+    Rinkeby: "RINKEBY ETH",
     RSK: "RSK",
     EXP: "EXP",
     UBQ: "UBQ",
     POA: "POA",
     TOMO: "TOMO",
     ELLA: "ELLA",
-    Custom: "CUSTOM kUSD"
+    Custom: "CUSTOM ETH"
 };
-nodes.ensNodeTypes = [nodes.nodeTypes.kUSD, nodes.nodeTypes.Ropsten];
-nodes.domainsaleNodeTypes = [nodes.nodeTypes.kUSD, nodes.nodeTypes.Ropsten];
+nodes.ensNodeTypes = [nodes.nodeTypes.ETH, nodes.nodeTypes.Ropsten];
+nodes.domainsaleNodeTypes = [nodes.nodeTypes.ETH, nodes.nodeTypes.Ropsten];
 nodes.customNodeObj = {
     'name': 'CUS',
     'blockExplorerTX': '',
@@ -35,7 +35,7 @@ nodes.customNodeObj = {
 nodes.nodeList = {
     'kusd_testnet': {
         'name': 'kUSD',
-        'type': nodes.nodeTypes.kUSD,
+        'type': nodes.nodeTypes.ETH,
         'eip155': true,
         'chainId': 519374298533,
         'tokenList': [],
