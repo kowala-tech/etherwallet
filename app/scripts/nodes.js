@@ -34,7 +34,7 @@ nodes.nodeList = {
         'abiList': [],
         'estimateGas': false,
         'service': 'Zygote Testnet',
-        'lib': new nodes.customNode('http://rpcnode.testnet.kowala.io', '30503')
+        'lib': new nodes.customNode('https://rpcnode.zygote.kowala.tech', '30503')
     },
     // 'kusd_mainnet': {
     //     'name': 'kUSD',
@@ -47,7 +47,7 @@ nodes.nodeList = {
     //     'abiList': [],
     //     'estimateGas': false,
     //     'service': 'Zygote Mainnet',
-    //     'lib': new nodes.customNode('http://rpcnode.testnet.kowala.io', '30503')
+    //     'lib': new nodes.customNode('http://rpcnode.kusd.kowala.io', '30503')
     // }
 };
 
