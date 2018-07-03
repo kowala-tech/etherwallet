@@ -53,6 +53,7 @@
   <!-- If unlocked with PK -->
   <article class="block" ng-hide="wallet.type=='addressOnly'">
 
+	<h5>Send money</h5>
 
     <!-- To Address -->
     <div class="row form-group">

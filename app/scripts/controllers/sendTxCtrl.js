@@ -85,6 +85,7 @@ var sendTxCtrl = function($scope, $sce, walletService, $rootScope) {
         return walletService.wallet.getAddressString();
     }, function() {
         if (walletService.wallet == null) return;
+
         $scope.wallet = walletService.wallet;
         $scope.wd = true;
         $scope.wallet.setBalance(applyScope);
@@ -142,8 +143,7 @@ var sendTxCtrl = function($scope, $sce, walletService, $rootScope) {
             }, 500);
         }
         if ($scope.tx.sendMode == 'token') {
-            $scope.tokenTx.to = $scope.tx.to;
-            $scope.tokenTx.value = $scope.tx.value;
+ $scope.tokenTx.value = $scope.tx.value;
         }
         if (newValue.to !== oldValue.to) {
             for (var i in $scope.customGas) {
@@ -229,6 +229,9 @@ var sendTxCtrl = function($scope, $sce, walletService, $rootScope) {
             txData.data = $scope.wallet.tokenObjs[$scope.tokenTx.id].getData($scope.tokenTx.to, $scope.tokenTx.value).data;
             txData.value = '0x00';
         }
+
+		$scope.notifier.info("Please confirm the transaction on your Ledger device");
+
         uiFuncs.generateTx(txData, function(rawTx) {
             if (!rawTx.isError) {
                 $scope.rawTx = rawTx.rawTx;
@@ -287,6 +290,7 @@ var sendTxCtrl = function($scope, $sce, walletService, $rootScope) {
         isJSON = true;
       } else {
         if( signedTx.slice(0,2)=="0x" ) signedTx = signedTx.slice(2, signedTx.length )
+
         txData = new ethUtil.Tx(signedTx)
       }
       $scope.parsedSignedTx.gasPrice      = {}
@@ -304,8 +308,6 @@ var sendTxCtrl = function($scope, $sce, walletService, $rootScope) {
       $scope.parsedSignedTx.txFee.eth     = etherUnits.tokCoin( parseInt($scope.parsedSignedTx.txFee.wei), 'wei' ).toString()
       $scope.parsedSignedTx.nonce         = (txData.nonce=='0x'||txData.nonce==''||txData.nonce==null) ? '0' : new BigNumber(ethFuncs.sanitizeHex(txData.nonce.toString('hex'))).toString()
       $scope.parsedSignedTx.data          = (txData.data=='0x'||txData.data==''||txData.data==null) ? '(none)' : ethFuncs.sanitizeHex(txData.data.toString('hex'))
-
-
     }
 
 };

@@ -4,7 +4,8 @@ etherscan.SERVERURL = "https://api.etherscan.io/api";
 etherscan.pendingPosts = [];
 etherscan.config = {
     headers: {
-        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
+        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+		'Origin': location.hostname
     }
 };
 

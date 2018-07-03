@@ -13,7 +13,6 @@ ADD . /etherwallet
 RUN npm install
 RUN npm run dist
 
-
 FROM nginx
 
 RUN echo "server {\

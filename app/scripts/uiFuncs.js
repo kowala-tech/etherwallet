@@ -56,7 +56,7 @@ uiFuncs.signTxTrezor = function(rawTx, txData, callback) {
     );
 }
 uiFuncs.signTxLedger = function(app, eTx, rawTx, txData, old, callback) {
-    eTx.raw[6] = Buffer.from([rawTx.chainId]);
+    eTx.raw[6] = Buffer.from([rawTx.chainId]); 
     eTx.raw[7] = eTx.raw[8] = 0;
     var toHash = old ? eTx.raw.slice(0, 6) : eTx.raw;
     var txToSign = ethUtil.rlp.encode(toHash);
@@ -157,9 +157,10 @@ uiFuncs.generateTx = function(txData, callback) {
                 gasLimit: ethFuncs.sanitizeHex(ethFuncs.decimalToHex(txData.gasLimit)),
                 to: ethFuncs.sanitizeHex(txData.to),
                 value: ethFuncs.sanitizeHex(ethFuncs.decimalToHex(etherUnits.toWei(txData.value, txData.unit))),
-                data: ethFuncs.sanitizeHex(txData.data)
+                data: ethFuncs.sanitizeHex(txData.data),
+                chainId: ajaxReq.chainId,
             }
-            if (ajaxReq.eip155) rawTx.chainId = ajaxReq.chainId;
+
             rawTx.data = rawTx.data == '' ? '0x' : rawTx.data;
             var eTx = new ethUtil.Tx(rawTx);
             if ((typeof txData.hwType != "undefined") && (txData.hwType == "ledger")) {

@@ -7,19 +7,7 @@
       How would you like to access your wallet?
     </h4>
 
-    <!-- View Balance Only -->
-    <label aria-flowto="aria1"
-           class="radio"
-           ng-show="globalService.currentTab==globalService.tabs.sendTransaction.id || globalService.currentTab==globalService.tabs.viewWalletInfo.id">
-      <input aria-flowto="aria1"
-             aria-label="address"
-             type="radio"
-             ng-model="walletType"
-             value="addressOnly" />
-        View w/ Address Only
-    </label>
-
-    <!-- MetaMask -->
+    <!-- MetaMask ->
     <label aria-flowto="aria2"
            class="radio">
       <input aria-flowto="aria2"
@@ -30,7 +18,7 @@
       <span translate="x_MetaMask">
         MetaMask / Mist
       </span>
-    </label>
+    </label-->
 
     <!-- Ledger -->
     <label aria-flowto="aria3"
@@ -44,7 +32,7 @@
       Ledger Wallet
     </label>
 
-    <!-- TREZOR -->
+    <!-- TREZOR ->
     <label class="radio"
            aria-flowto="aria4"
            ng-show="ajaxReq.type=='ETH'||ajaxReq.type=='ETC'||ajaxReq.type=='ROPSTEN ETH'||ajaxReq.type=='RINKEBY ETH'||ajaxReq.type=='KOVAN ETH'||ajaxReq.type=='EXP'||ajaxReq.type=='UBQ'||ajaxReq.type=='RSK'||ajaxReq.type=='POA'||ajaxReq.type=='TOMO'||ajaxReq.type=='ELLA'||ajaxReq.type=='EGEM'||ajaxReq.type=='CLO'||ajaxReq.type=='ETSC'||ajaxReq.type=='MUSIC'||ajaxReq.type=='YAP'">
@@ -54,7 +42,7 @@
              ng-model="walletType"
              value="trezor" />
       TREZOR
-    </label>
+    </label->
 
     <!-- Digital Bitbox -->
     <label aria-flowto="aria5"
@@ -78,7 +66,7 @@
              ng-model="walletType"
              value="secalot"/>
       Secalot
-    </label>
+    </label-->
 
     <!-- Keystore / JSON File -->
     <label aria-flowto="aria6"
@@ -132,7 +120,7 @@
       </a>
     </label>
 
-    <!-- Parity -->
+    <!-- Parity ->
     <label aria-flowto="aria9"
            class="radio"
            style="display: none;"
@@ -157,7 +145,20 @@
          rel="noopener noreferrer">
            <img src="images/icon-help-2.svg" width="16px" height="16px" style="margin: 0 5px 5px">
       </a>
+    </label-->
+
+    <!-- View Balance Only -->
+    <label aria-flowto="aria1"
+           class="radio"
+           ng-show="globalService.currentTab==globalService.tabs.sendTransaction.id || globalService.currentTab==globalService.tabs.viewWalletInfo.id">
+      <input aria-flowto="aria1"
+             aria-label="address"
+             type="radio"
+             ng-model="walletType"
+             value="addressOnly" />
+        View w/ Address Only
     </label>
+ 
   </section>
   <!-- / Column 1 - Select Type of Key -->
 
@@ -764,12 +765,12 @@
           <button aria-label="Close" type="button" class="close" data-dismiss="modal">&times;</button>
 
           <!-- Select HD Path -->
-          <h4 id="modalTitle" class="modal-title" translate="ADD_Radio_5_Path" style="margin-bottom: .25rem">
+          <!--h4 id="modalTitle" class="modal-title" translate="ADD_Radio_5_Path" style="margin-bottom: .25rem">
             Select HD derivation path:
-          </h4>
+          </h4-->
 
           <p class="alert alert-danger"
-             ng-hide="ajaxReq.type=='ETH'||ajaxReq.type=='ETC'||ajaxReq.type=='ROPSTEN ETH'||ajaxReq.type=='RINKEBY ETH'||ajaxReq.type=='KOVAN ETH'||ajaxReq.type=='EXP'||ajaxReq.type=='UBQ'||ajaxReq.type=='ELLA'||ajaxReq.type=='EGEM'||ajaxReq.type=='CLO'||ajaxReq.type=='ETSC'||ajaxReq.type=='MUSIC'||ajaxReq.type=='YAP'">
+             ng-hide="ajaxReq.type=='KUSD'||ajaxReq.type=='ETC'||ajaxReq.type=='ROPSTEN ETH'||ajaxReq.type=='RINKEBY ETH'||ajaxReq.type=='KOVAN ETH'||ajaxReq.type=='EXP'||ajaxReq.type=='UBQ'||ajaxReq.type=='ELLA'||ajaxReq.type=='EGEM'||ajaxReq.type=='CLO'||ajaxReq.type=='ETSC'||ajaxReq.type=='MUSIC'||ajaxReq.type=='YAP'">
                 We do not know the correct path for this network.
                 <a href="https://github.com/kvhnuke/etherwallet/issues"
                    target="_blank"
@@ -779,7 +780,7 @@
                 so we can discuss / be enlightened.
           </p>
 
-          <section class="row">
+          <!--section class="row">
 
             <div class="col-sm-4">
               <label class="radio small">
@@ -994,7 +995,7 @@
                       style="float: right;margin: 0 0 .5rem;" />
               </label>
             </div>
-          </section>
+          </section-->
 
 
 

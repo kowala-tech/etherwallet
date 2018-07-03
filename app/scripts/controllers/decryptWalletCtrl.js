@@ -1,6 +1,6 @@
 'use strict';
 var decryptWalletCtrl = function($scope, $sce, walletService) {
-    $scope.walletType = "";
+    $scope.walletType = "ledger";
     $scope.requireFPass = $scope.requirePPass = $scope.showFDecrypt = $scope.showPDecrypt = $scope.showAOnly = $scope.showParityDecrypt = false;
     $scope.filePassword = "";
     $scope.fileContent = "";
@@ -15,11 +15,11 @@ var decryptWalletCtrl = function($scope, $sce, walletService) {
         id: 0,
         hdk: null,
         dPath: '',
-        defaultDPath:      "m/44'/60'/0'/0",       // first address: m/44'/60'/0'/0/0
-        alternativeDPath:  "m/44'/60'/0'",         // first address: m/44'/60'/0/0
-        customDPath:       "m/44'/60'/1'/0",       // first address: m/44'/60'/1'/0/0
-        ledgerPath:        "m/44'/60'/0'",         // first address: m/44'/60'/0/0
-        ledgerClassicPath: "m/44'/60'/160720'/0'", // first address: m/44'/60'/160720'/0/0
+        defaultDPath:      "m/44'/91927009'/0'/0",       // first address: m/44'/60'/0'/0/0
+        alternativeDPath:  "m/44'/91927009'/0'",         // first address: m/44'/60'/0/0
+        customDPath:       "m/44'/91927009'/1'/0",       // first address: m/44'/60'/1'/0/0
+        ledgerPath:        "m/44'/91927009'/0'",         // first address: m/44'/60'/0/0
+        ledgerClassicPath: "m/44'/91927009'/160720'/0'", // first address: m/44'/60'/160720'/0/0
         trezorTestnetPath: "m/44'/1'/0'/0",        // first address: m/44'/1'/0'/0/0
         trezorClassicPath: "m/44'/61'/0'/0",       // first address: m/44'/61'/0'/0/0
         trezorPath:        "m/44'/60'/0'/0",       // first address: m/44'/60'/0'/0/0
